@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Нано Софт — аренда быстрых облачных и выделенных серверов для 1С на NVMe-накопителях (Tier III в РФ по 152-ФЗ, SLA 99,98%), оптимизация PostgreSQL и устранение блокировок баз 1С.">
+  <title>Нано Софт — Аренда серверов для 1С (NVMe) и ускорение работы баз данных</title>
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Нано Софт">
+  <meta property="og:title" content="Нано Софт — Аренда серверов для 1С по 152-ФЗ и оптимизация СУБД">
+  <meta property="og:description" content="Выделенные и облачные серверы для 1С:ERP, КА, УТ на быстрых NVMe-дисках. Устранение ошибок блокировок, свертка больших баз и SLA 99,98%.">
+  <meta property="og:url" content="https://nanosoft.team/servers.html">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path d="m5 12 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-up" viewBox="0 0 24 24">
+      <path d="M5 19 19 5M7 5h12v12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-tg" viewBox="0 0 24 24">
+      <path d="M21.5 4.5 2.8 11.7c-1.3.5-1.3 1.3-.2 1.6l4.8 1.5 11.1-7c.5-.3 1-.1.6.2L10.9 16.3l-.3 4.6c.5 0 .7-.2 1-.5l2.4-2.3 5 3.7c.9.5 1.6.2 1.8-.8l3.3-15.5c.3-1.3-.5-1.9-1.3-1.5z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-exchange" viewBox="0 0 24 24">
+      <path d="M4 8h16m0 0l-4-4m4 4l-4 4M20 16H4m0 0l4-4m-4 4l4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24">
+      <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Нано Софт — на главную">
+        <span class="brand-icon">
+          <img src="https://nanosoft.team/favicon.ico" alt="" width="30" height="30">
+        </span>
+        <span class="brand-name">НАНО<span>СОФТ</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <button class="nav-hub-btn" type="button" aria-expanded="false" data-mega-target="hub-products">
+          Продукты <svg aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+
+        <button class="nav-hub-btn" type="button" aria-expanded="false" data-mega-target="hub-solutions">
+          Решения <svg aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+
+        <button class="nav-hub-btn" type="button" aria-expanded="false" data-mega-target="hub-company">
+          О компании <svg aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+
+        <a class="nav-direct-link" href="index.html#cases">Кейсы</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-icon-tg" href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer" aria-label="Telegram Нано Софт">
+          <svg aria-hidden="true"><use href="#icon-tg"/></svg>
+        </a>
+        <a class="header-contact" href="tel:+78124071767">+7 (812) 407-17-67</a>
+        <a class="button button-small header-cta" href="#contacts">
+          Обсудить задачу
+          <svg aria-hidden="true"><use href="#icon-arrow"/></svg>
+        </a>
+      </div>
+
+      <details class="mobile-menu">
+        <summary aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </summary>
+        <nav aria-label="Мобильная навигация">
+          <a href="index.html">Главная</a>
+          <a href="vnedrenie-1c.html">Внедрение 1С и переходы</a>
+          <a href="ai.html">Внедрение ИИ в 1С (Нейросети)</a>
+          <a href="index.html#solutions">Внедрение 1С:ERP / КА</a>
+          <a href="marketplaces.html">Маркетплейсы (Ozon, WB, Яндекс, Авито)</a>
+          <a href="markirovka.html">Маркировка и «Честный Знак»</a>
+          <a href="bitrix24.html">Битрикс24 и CRM</a>
+          <a href="servers.html">Аренда серверов 1С</a>
+          <a href="about.html">О компании и сертификаты</a>
+          <a href="index.html#cases">Кейсы</a>
+          <a href="#contacts">Контакты</a>
+          <a href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+          <a href="tel:+78124071767">+7 (812) 407-17-67</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <div class="mega-menu-overlay" aria-hidden="true"></div>
+
+  <!-- Хаб 1: Продукты -->
+  <div class="mega-dropdown-panel" id="hub-products" role="region" aria-label="Продукты 1С и платформы">
+    <div class="floating-menu-grid">
+      <a class="floating-menu-card" href="vnedrenie-1c.html">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Внедрение 1С с нуля и переходы</strong>
+          <span>Запуск новой системы, миграция с УПП / 7.7 и перенос данных</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="ai.html">
+        <div class="floating-card-icon"><svg><use href="#icon-exchange"/></svg></div>
+        <div class="floating-card-body">
+          <strong>ИИ &amp; Нейросети в 1С</strong>
+          <span>LLM-ассистенты, OCR первички и предиктивная аналитика</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#tab-erp">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>1С:ERP &amp; КА 2.5</strong>
+          <span>Комплексный учет, себестоимость и 20/25/26 счета</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="marketplaces.html">
+        <div class="floating-card-icon"><svg><use href="#icon-exchange"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Маркетплейсы (Ozon, WB, Яндекс, Авито)</strong>
+          <span>Остатки без оверсейлов и потоварная юнит-экономика</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#tab-wms">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Склад WMS &amp; ТСД DataMobile</strong>
+          <span>Адресное хранение, зонирование и сборка по штрихкодам</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="bitrix24.html">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Битрикс24 Enterprise</strong>
+          <span>CRM, сквозная телефония и двусторонний обмен с 1С</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="servers.html">
+        <div class="floating-card-icon"><svg><use href="#icon-up"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Серверы 1С (NVMe) и ускорение баз</strong>
+          <span>Tier III ЦОД в РФ по 152-ФЗ, устранение блокировок СУБД</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Хаб 2: Решения -->
+  <div class="mega-dropdown-panel" id="hub-solutions" role="region" aria-label="Отраслевые решения">
+    <div class="floating-menu-grid">
+      <a class="floating-menu-card" href="markirovka.html">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Маркировка «Честный Знак», ТС ПИоТ и ЛМ ЧЗ</strong>
+          <span>True API, СУЗ, разрешительный режим на кассах и агрегация</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="markirovka.html#vetis">
+        <div class="floating-card-icon"><svg><use href="#icon-exchange"/></svg></div>
+        <div class="floating-card-body">
+          <strong>ВетИС «Меркурий», ЕГАИС и МДЛП</strong>
+          <span>Автоматическое гашение и оформление эВСД внутри 1С</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="vnedrenie-1c.html#migration-routes">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Переход с 1С:УПП 1.3 и 7.7 без простоев</strong>
+          <span>Бесшовная миграция справочников, остатков и доработок за выходные</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#connected">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Шина обмена данных &amp; REST API</strong>
+          <span>Микросервисы связки 1С с оборудованием и дилерскими сетями</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Хаб 3: О компании -->
+  <div class="mega-dropdown-panel" id="hub-company" role="region" aria-label="О компании">
+    <div class="floating-menu-grid">
+      <a class="floating-menu-card" href="about.html">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>О компании и сертификаты</strong>
+          <span>Команда, компетенции 1С и подход к проектам</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#why-us">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Почему Нано Софт</strong>
+          <span>Прямой контакт с ведущим архитектором без бюрократии</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#workflow">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Методология по ГОСТ</strong>
+          <span>5 прозрачных этапов от предпроектного аудита до запуска</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#guarantees">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Гарантии, NDA и SLA</strong>
+          <span>Защита данных по NDA, фиксированные этапы и 12 месяцев гарантии</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#calculator">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Экспресс-калькулятор</strong>
+          <span>Интерактивный расчет сроков и рекомендуемого стека</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- Hero раздел Серверов -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="auto" poster="media/hero-poster.jpg">
+          <source src="media/hero.mp4" type="video/mp4">
+        </video>
+        <div class="server-fallback"><span></span><span></span><span></span><span></span></div>
+      </div>
+      <div class="hero-shade"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Облачная инфраструктура по 152-ФЗ и оптимизация СУБД</p>
+          <h1 id="hero-title">Аренда серверов для 1С<br>на быстрых <em>NVMe-дисках</em></h1>
+          <p class="hero-description">Размещаем базы 1С:ERP, КА 2.5, УТ 11.5 и PostgreSQL на высокочастотных процессорах в ЦОД Tier III в РФ. Устраняем зависания при проведении документов, ошибки ожидания блокировок СУБД и сжимаем разросшиеся базы с гарантией SLA 99,98%.</p>
+          <div class="hero-actions">
+            <a class="button button-bright" href="#contacts">
+              Получить сервер на 7 дней бесплатно
+              <svg aria-hidden="true"><use href="#icon-arrow"/></svg>
+            </a>
+            <a class="text-link text-link-light" href="#tariffs">Тарифные планы и аудит баз <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="hero-proof">
+          <span>ЦОД уровня Tier III в России (152-ФЗ)</span>
+          <span>NVMe PCIe 4.0 накопители промышленного класса</span>
+          <span>Тюнинг PostgreSQL / MS SQL и SLA 99,98%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Бегущая строка технологий -->
+    <section class="tech-marquee-section" aria-label="Характеристики серверов">
+      <div class="tech-grid-overlay" aria-hidden="true"></div>
+      <div class="ticker-dual">
+        <div class="ticker ticker-forward" aria-hidden="true">
+          <div class="ticker-track">
+            <span>Процессоры до 4.5 ГГц под 1С<b class="tk-sep">◆</b>Изолированный бэкап с защитой от шифровальщиков<b class="tk-sep">◆</b>PostgreSQL 1C Optimized<b class="tk-sep">◆</b>Устранение ошибок блокировок СУБД<b class="tk-sep">◆</b></span>
+            <span>Процессоры до 4.5 ГГц под 1С<b class="tk-sep">◆</b>Изолированный бэкап с защитой от шифровальщиков<b class="tk-sep">◆</b>PostgreSQL 1C Optimized<b class="tk-sep">◆</b>Устранение ошибок блокировок СУБД<b class="tk-sep">◆</b></span>
+          </div>
+        </div>
+        <div class="ticker ticker-backward" aria-hidden="true">
+          <div class="ticker-track">
+            <span>Миграция базы за 1 ночь без простоев<b class="tk-sep">◆</b>Свертка и чистка баз свыше 50–100 ГБ<b class="tk-sep">◆</b>RDP и веб-доступ к 1С<b class="tk-sep">◆</b>Инженерное администрирование 24/7<b class="tk-sep">◆</b></span>
+            <span>Миграция базы за 1 ночь без простоев<b class="tk-sep">◆</b>Свертка и чистка баз свыше 50–100 ГБ<b class="tk-sep">◆</b>RDP и веб-доступ к 1С<b class="tk-sep">◆</b>Инженерное администрирование 24/7<b class="tk-sep">◆</b></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Тарифы серверов + Блок ускорения тормозящих баз -->
+    <section class="solutions section reveal-block" id="tariffs">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 01 / Готовые конфигурации</p>
+            <h2>Выделенные мощности<br>под ваши <span class="muted">масштабы 1С</span></h2>
+          </div>
+          <p class="section-intro">Серверы настроены специально под специфику платформы 1С:Предприятие 8.3: высокая однопоточная частота ядер, быстрая дисковая подсистема и оптимизированный сервер СУБД.</p>
+        </div>
+
+        <div class="server-tariff-grid">
+          <div class="server-card spotlight-card">
+            <div>
+              <h3>Старт 1С</h3>
+              <p class="muted">Для небольших торговых компаний и оптовых складов на 10–15 пользователей.</p>
+              <div class="server-price">от 4 900 ₽ <span>/ месяц</span></div>
+              <ul class="server-specs">
+                <li><span>Процессор</span> <span>4 vCPU (до 4.2 ГГц)</span></li>
+                <li><span>Оперативная память</span> <span>16 ГБ DDR4 ECC</span></li>
+                <li><span>Дисковый массив</span> <span>120 ГБ NVMe RAID-10</span></li>
+                <li><span>Резервное копирование</span> <span>Ежедневно (глубина 14 дней)</span></li>
+                <li><span>Администрирование</span> <span>Включено в тариф</span></li>
+              </ul>
+            </div>
+            <a class="button button-small" href="#contacts">Тестировать 7 дней бесплатно <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+
+          <div class="server-card popular spotlight-card">
+            <span class="server-popular-badge">Популярный выбор</span>
+            <div>
+              <h3>Бизнес ERP / КА</h3>
+              <p class="muted">Оптимально для производственных предприятий и дистрибьюторов на 20–50 АРМ.</p>
+              <div class="server-price">от 12 500 ₽ <span>/ месяц</span></div>
+              <ul class="server-specs">
+                <li><span>Процессор</span> <span>8 vCPU (до 4.5 ГГц)</span></li>
+                <li><span>Оперативная память</span> <span>32–64 ГБ DDR4 ECC</span></li>
+                <li><span>Дисковый массив</span> <span>250 ГБ Enterprise NVMe</span></li>
+                <li><span>СУБД</span> <span>PostgreSQL Pro / 1C Optimized</span></li>
+                <li><span>Резервное копирование</span> <span>Два независимых ЦОД</span></li>
+              </ul>
+            </div>
+            <a class="button button-small" href="#contacts">Тестировать 7 дней бесплатно <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+
+          <div class="server-card spotlight-card">
+            <div>
+              <h3>Enterprise Dedicated</h3>
+              <p class="muted">Выделенный физический сервер под холдинги, 1С:ERP, WMS и 60+ пользователей.</p>
+              <div class="server-price">от 28 000 ₽ <span>/ месяц</span></div>
+              <ul class="server-specs">
+                <li><span>Процессор</span> <span>16+ ядер Dedicated (до 4.7 ГГц)</span></li>
+                <li><span>Оперативная память</span> <span>64–128 ГБ ECC Reg</span></li>
+                <li><span>Дисковый массив</span> <span>2× 1 ТБ NVMe PCIe 4.0 RAID</span></li>
+                <li><span>Канал связи</span> <span>1 Гбит/с без ограничений</span></li>
+                <li><span>Поддержка</span> <span>Приоритетный SLA 24/7</span></li>
+              </ul>
+            </div>
+            <a class="button button-small" href="#contacts">Рассчитать конфигурацию <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+        </div>
+
+        <!-- Инженерная плашка: Тормоза 1С, ошибки блокировок и распухшие базы -->
+        <div class="trust-banner" id="db-audit" style="margin-top:44px;background:var(--dark);border-color:rgba(229,169,59,0.35);color:#fff;">
+          <div class="trust-banner-text">
+            <strong style="color:#fff;">База 1С тормозит, выдает «Ошибку ожидания блокировки» или разрослась свыше 50 ГБ?</strong>
+            <p style="color:#94a3b8;margin-top:6px;">Часто причина зависаний при проведении документов и долгого закрытия месяца кроется не в нехватке «железа», а в неоптимизированных запросах, раздутых регистрах и настройках СУБД. Проводим аудит производительности: выполняем безопасную свертку исторических таблиц, устраняем взаимоблокировки PostgreSQL / MS SQL и кратно ускоряем базу без потери учетных данных.</p>
+          </div>
+          <div class="trust-banner-stat">
+            <div class="stat-pill" style="border-color:rgba(255,255,255,0.12);">
+              <strong style="color:var(--accent-light);">×5 быстрее</strong>
+              <span style="color:#cbd5e1;">Проведение и отчеты</span>
+            </div>
+            <div class="stat-pill" style="border-color:rgba(255,255,255,0.12);">
+              <strong style="color:var(--accent-light);">−60% объем</strong>
+              <span style="color:#cbd5e1;">Сжатие и чистка базы</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Контактная форма -->
+    <section class="contact-section section reveal-block" id="contacts">
+      <div class="container">
+        <div class="section-heading contact-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 02 / Тест-драйв и аудит</p>
+            <h2>Бесплатный тестовый период<br>сервера <span class="muted">на 7 дней</span></h2>
+          </div>
+          <p class="section-intro">Развернем копию вашей рабочей базы 1С на нашем NVMe-сервере и проверим настройки СУБД, чтобы вы лично оценили прирост скорости до оплаты.</p>
+        </div>
+        <div class="contact-layout">
+          <form class="contact-form" id="consultation-form">
+            <div class="form-grid">
+              <label>Ваше имя <input name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required></label>
+              <label>Компания <input name="company" type="text" autocomplete="organization" placeholder="Название компании"></label>
+            </div>
+            <div class="form-grid">
+              <label>Телефон, Telegram или email <input name="contact" type="text" autocomplete="email" placeholder="+7 900 000-00-00 или @username" required></label>
+              <label>Конфигурация / Задача
+                <select name="service" required>
+                  <option value="" disabled selected>Выберите задачу</option>
+                  <option>Аренда сервера под 1С:ERP / 1С:КА 2.5 (тест 7 дней)</option>
+                  <option>Аренда сервера под 1С:УТ 11.5 / Бухгалтерию / ЗУП</option>
+                  <option>Аудит СУБД, устранение тормозов, ошибок блокировок и свертка базы</option>
+                  <option>Выделенный физический сервер (Dedicated) под холдинг</option>
+                  <option>Настройка резервного копирования и репликации на сервере заказчика</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="file-upload-label">
+              <div class="file-upload-icon"><svg><use href="#icon-up"/></svg></div>
+              <div class="file-upload-text">
+                <strong>Прикрепить параметры базы или скриншот ошибки</strong>
+                <span>PDF, DOCX, PNG, ZIP до 25 МБ</span>
+              </div>
+              <input type="file" name="attachment" id="task-file-input">
+            </label>
+            <label>Параметры задачи <textarea name="task" rows="4" placeholder="Сколько пользователей работают одновременно? Какой примерный объем базы (в ГБ) и на каких операциях возникают тормоза?"></textarea></label>
+
+            <label class="consent"><input type="checkbox" required><span>Согласен на обработку персональных данных для ответа на обращение и подготовки коммерческого предложения.</span></label>
+            <div class="form-bottom">
+              <button class="button" type="submit" id="submit-btn">Получить сервер на тест и оценку аудита <svg aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+              <p id="form-message" role="status" class="form-status-msg"></p>
+            </div>
+          </form>
+          <aside class="contact-aside">
+            <p class="aside-label">Быстрая связь с инженером</p>
+            <a class="contact-large" href="tel:+78124071767">+7 (812) 407-17-67</a>
+            <div class="aside-links">
+              <a class="contact-tg-btn" href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="#icon-tg"/></svg>
+                <span>Написать в Telegram</span>
+              </a>
+              <a class="contact-email" href="mailto:info@nanosoft-team.ru">info@nanosoft-team.ru <svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+            </div>
+            <div class="aside-divider"></div>
+            <p class="aside-label">География и центр разработки</p>
+            <address>Работаем с предприятиями по всей РФ и СНГ.<br>Инженерный центр: г. Вологда, ул. Октябрьская, д. 27</address>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-icon"><img src="https://nanosoft.team/favicon.ico" alt="" width="30" height="30"></span><span class="brand-name">НАНО<span>СОФТ</span></span></a>
+        <p>Комплексная автоматизация производства, складов, маркировки и учета на базе 1С:ERP, 1С:КА и микросервисов.</p>
+      </div>
+      <div>
+        <h3>Навигация</h3>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О компании и сертификаты</a>
+        <a href="vnedrenie-1c.html">Внедрение 1С и переходы</a>
+        <a href="ai.html">Внедрение ИИ в 1С (Нейросети)</a>
+        <a href="marketplaces.html">Маркетплейсы</a>
+        <a href="markirovka.html">Маркировка и «Честный Знак»</a>
+        <a href="bitrix24.html">Битрикс24 и CRM</a>
+        <a href="servers.html">Аренда серверов 1С</a>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <a href="#contacts">Оставить заявку</a>
+        <a href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer">Telegram-чат с инженером</a>
+        <a href="tel:+78124071767">+7 (812) 407-17-67</a>
+        <a href="mailto:info@nanosoft-team.ru">info@nanosoft-team.ru</a>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <p>ООО «НАНО СОФТ»<br>ИНН 3500005965<br>ОГРН 1243500004000</p>
+      </div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 ООО «НАНО СОФТ»</span><span>Внедрение · Разработка · Сопровождение</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

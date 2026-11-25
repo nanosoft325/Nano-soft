@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Нано Софт — внедрение ИИ (LLM, RAG, нейросети) в 1С:ERP, КА 2.5, УТ 11.5 и Битрикс24. Интеллектуальный ассистент, авторазбор первички (УПД и счетов), предиктивная аналитика в контуре компании.">
+  <title>Нано Софт — Внедрение искусственного интеллекта (ИИ) в 1С</title>
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Нано Софт">
+  <meta property="og:title" content="Нано Софт — Внедрение искусственного интеллекта (ИИ) в 1С под ключ">
+  <meta property="og:description" content="Связываем нейросети и 1С в закрытом контуре (On-Premise): распознавание УПД и накладных, ИИ-консультант по регламентам и предиктивное планирование запасов.">
+  <meta property="og:url" content="https://nanosoft.team/ai.html">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path d="m5 12 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-up" viewBox="0 0 24 24">
+      <path d="M5 19 19 5M7 5h12v12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-tg" viewBox="0 0 24 24">
+      <path d="M21.5 4.5 2.8 11.7c-1.3.5-1.3 1.3-.2 1.6l4.8 1.5 11.1-7c.5-.3 1-.1.6.2L10.9 16.3l-.3 4.6c.5 0 .7-.2 1-.5l2.4-2.3 5 3.7c.9.5 1.6.2 1.8-.8l3.3-15.5c.3-1.3-.5-1.9-1.3-1.5z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-exchange" viewBox="0 0 24 24">
+      <path d="M4 8h16m0 0l-4-4m4 4l-4 4M20 16H4m0 0l4-4m-4 4l4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24">
+      <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Нано Софт — на главную">
+        <span class="brand-icon">
+          <img src="https://nanosoft.team/favicon.ico" alt="" width="30" height="30">
+        </span>
+        <span class="brand-name">НАНО<span>СОФТ</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <button class="nav-hub-btn" type="button" aria-expanded="false" data-mega-target="hub-products">
+          Продукты <svg aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+
+        <button class="nav-hub-btn" type="button" aria-expanded="false" data-mega-target="hub-solutions">
+          Решения <svg aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+
+        <button class="nav-hub-btn" type="button" aria-expanded="false" data-mega-target="hub-company">
+          О компании <svg aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+
+        <a class="nav-direct-link" href="index.html#cases">Кейсы</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-icon-tg" href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer" aria-label="Telegram Нано Софт">
+          <svg aria-hidden="true"><use href="#icon-tg"/></svg>
+        </a>
+        <a class="header-contact" href="tel:+78124071767">+7 (812) 407-17-67</a>
+        <a class="button button-small header-cta" href="#contacts">
+          Обсудить задачу
+          <svg aria-hidden="true"><use href="#icon-arrow"/></svg>
+        </a>
+      </div>
+
+      <details class="mobile-menu">
+        <summary aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </summary>
+        <nav aria-label="Мобильная навигация">
+          <a href="index.html">Главная</a>
+          <a href="vnedrenie-1c.html">Внедрение 1С и переходы</a>
+          <a href="ai.html">Внедрение ИИ в 1С (Нейросети)</a>
+          <a href="index.html#solutions">Внедрение 1С:ERP / КА</a>
+          <a href="marketplaces.html">Маркетплейсы (Ozon, WB, Яндекс, Авито)</a>
+          <a href="markirovka.html">Маркировка и «Честный Знак»</a>
+          <a href="bitrix24.html">Битрикс24 и CRM</a>
+          <a href="servers.html">Аренда серверов 1С</a>
+          <a href="about.html">О компании и сертификаты</a>
+          <a href="index.html#cases">Кейсы</a>
+          <a href="#contacts">Контакты</a>
+          <a href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+          <a href="tel:+78124071767">+7 (812) 407-17-67</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <div class="mega-menu-overlay" aria-hidden="true"></div>
+
+  <!-- Хаб 1: Продукты -->
+  <div class="mega-dropdown-panel" id="hub-products" role="region" aria-label="Продукты 1С и платформы">
+    <div class="floating-menu-grid">
+      <a class="floating-menu-card" href="vnedrenie-1c.html">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Внедрение 1С с нуля и переходы</strong>
+          <span>Запуск новой системы, миграция с УПП / 7.7 и перенос данных</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="ai.html">
+        <div class="floating-card-icon"><svg><use href="#icon-exchange"/></svg></div>
+        <div class="floating-card-body">
+          <strong>ИИ &amp; Нейросети в 1С</strong>
+          <span>LLM-ассистенты, OCR первички и предиктивная аналитика</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#tab-erp">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>1С:ERP &amp; КА 2.5</strong>
+          <span>Комплексный учет, себестоимость и 20/25/26 счета</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="marketplaces.html">
+        <div class="floating-card-icon"><svg><use href="#icon-exchange"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Маркетплейсы (Ozon, WB, Яндекс, Авито)</strong>
+          <span>Остатки без оверсейлов и потоварная юнит-экономика</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#tab-wms">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Склад WMS &amp; ТСД DataMobile</strong>
+          <span>Адресное хранение, зонирование и сборка по штрихкодам</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="bitrix24.html">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Битрикс24 Enterprise</strong>
+          <span>CRM, сквозная телефония и двусторонний обмен с 1С</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="servers.html">
+        <div class="floating-card-icon"><svg><use href="#icon-up"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Серверы 1С (NVMe) и ускорение баз</strong>
+          <span>Tier III ЦОД в РФ по 152-ФЗ, устранение блокировок СУБД</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Хаб 2: Решения -->
+  <div class="mega-dropdown-panel" id="hub-solutions" role="region" aria-label="Отраслевые решения">
+    <div class="floating-menu-grid">
+      <a class="floating-menu-card" href="markirovka.html">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Маркировка «Честный Знак», ТС ПИоТ и ЛМ ЧЗ</strong>
+          <span>True API, СУЗ, разрешительный режим на кассах и агрегация</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="markirovka.html#vetis">
+        <div class="floating-card-icon"><svg><use href="#icon-exchange"/></svg></div>
+        <div class="floating-card-body">
+          <strong>ВетИС «Меркурий», ЕГАИС и МДЛП</strong>
+          <span>Автоматическое гашение и оформление эВСД внутри 1С</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="vnedrenie-1c.html#migration-routes">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Переход с 1С:УПП 1.3 и 7.7 без простоев</strong>
+          <span>Бесшовная миграция справочников, остатков и доработок за выходные</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#connected">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Шина обмена данных &amp; REST API</strong>
+          <span>Микросервисы связки 1С с оборудованием и дилерскими сетями</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Хаб 3: О компании -->
+  <div class="mega-dropdown-panel" id="hub-company" role="region" aria-label="О компании">
+    <div class="floating-menu-grid">
+      <a class="floating-menu-card" href="about.html">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>О компании и сертификаты</strong>
+          <span>Команда, компетенции 1С и подход к проектам</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#why-us">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Почему Нано Софт</strong>
+          <span>Прямой контакт с ведущим архитектором без бюрократии</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#workflow">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Методология по ГОСТ</strong>
+          <span>5 прозрачных этапов от предпроектного аудита до запуска</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#guarantees">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Гарантии, NDA и SLA</strong>
+          <span>Защита данных по NDA, фиксированные этапы и 12 месяцев гарантии</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#calculator">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Экспресс-калькулятор</strong>
+          <span>Интерактивный расчет сроков и рекомендуемого стека</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- Hero раздел ИИ в 1С -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="auto" poster="media/hero-poster.jpg">
+          <source src="media/hero.mp4" type="video/mp4">
+        </video>
+        <div class="server-fallback"><span></span><span></span><span></span><span></span></div>
+      </div>
+      <div class="hero-shade"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Next-Gen Enterprise AI · On-Premise контур</p>
+          <h1 id="hero-title">Внедрение ИИ в 1С:<br><em>умные ассистенты и автопилот учета</em></h1>
+          <p class="hero-description">Интегрируем языковые модели (LLM), корпоративные RAG-базы знаний и компьютерное зрение прямо в интерфейс 1С:ERP, КА 2.5 и УТ 11.5. Автоматический ввод первичных документов, прогнозирование складских запасов, поиск по внутренним регламентам и контроль аномалий себестоимости.</p>
+          <div class="hero-actions">
+            <a class="button button-bright" href="#contacts">
+              Рассчитать пилотный проект ИИ
+              <svg aria-hidden="true"><use href="#icon-arrow"/></svg>
+            </a>
+            <a class="text-link text-link-light" href="#ai-scenarios">Сценарии применения в бизнесе <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="hero-proof">
+          <span>Работа через On-Premise LLM (внутри периметра компании)</span>
+          <span>Прямой REST API мост с расширениями 1С (.cfe)</span>
+          <span>100% защита коммерческой тайны по NDA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Двойная бегущая строка технологий ИИ -->
+    <section class="tech-marquee-section" aria-label="Технологии искусственного интеллекта в 1С">
+      <div class="tech-grid-overlay" aria-hidden="true"></div>
+      <div class="ticker-dual">
+        <div class="ticker ticker-forward" aria-hidden="true">
+          <div class="ticker-track">
+            <span>Локальные LLM в контуре предприятия<b class="tk-sep">◆</b>Интеллектуальное распознавание УПД и счетов<b class="tk-sep">◆</b>RAG-поиск по регламентам 1С<b class="tk-sep">◆</b>Автоматическое сопоставление номенклатуры и ставок НДС<b class="tk-sep">◆</b></span>
+            <span>Локальные LLM в контуре предприятия<b class="tk-sep">◆</b>Интеллектуальное распознавание УПД и счетов<b class="tk-sep">◆</b>RAG-поиск по регламентам 1С<b class="tk-sep">◆</b>Автоматическое сопоставление номенклатуры и ставок НДС<b class="tk-sep">◆</b></span>
+          </div>
+        </div>
+        <div class="ticker ticker-backward" aria-hidden="true">
+          <div class="ticker-track">
+            <span>Предиктивное планирование неснижаемых остатков<b class="tk-sep">◆</b>Дедупликация и нормализация справочников НСИ<b class="tk-sep">◆</b>ИИ-ассистент менеджера по продажам<b class="tk-sep">◆</b>Анализ аномалий себестоимости на 20/25/26 счетах<b class="tk-sep">◆</b></span>
+            <span>Предиктивное планирование неснижаемых остатков<b class="tk-sep">◆</b>Дедупликация и нормализация справочников НСИ<b class="tk-sep">◆</b>ИИ-ассистент менеджера по продажам<b class="tk-sep">◆</b>Анализ аномалий себестоимости на 20/25/26 счетах<b class="tk-sep">◆</b></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 Сценария внедрения ИИ в 1С -->
+    <section class="solutions section reveal-block" id="ai-scenarios">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 01 / Готовые сценарии</p>
+            <h2>Как нейросети ускоряют<br>реальные <span class="muted">процессы в 1С</span></h2>
+          </div>
+          <p class="section-intro">Практические модули искусственного интеллекта, которые окупаются за первые 2–3 месяца за счет исключения ручного ввода и учетных ошибок.</p>
+        </div>
+
+        <div class="solution-list">
+          <!-- Сценарий 1: Первичка -->
+          <article class="solution-row">
+            <span class="row-number">01</span>
+            <div>
+              <h3>Автоматический ввод первички (OCR + LLM-валидация)</h3>
+              <p>Мгновенный разбор входящих PDF, сканов и фото накладных, счетов и УПД. Нейросеть с точностью 99,4% извлекает табличные части, автоматически сопоставляет незнакомую номенклатуру поставщика с вашим справочником НСИ, проверяет ставки НДС (5% / 7% / 20% / 22%) и создает черновик документа поступления в 1С без ручной набивки.</p>
+              <div class="tags"><span>Авторазбор УПД</span><span>Сопоставление НСИ</span><span>Проверка НДС</span><span>Экономия 80% времени</span></div>
+            </div>
+            <a href="#contacts" class="row-link" aria-label="Обсудить распознавание документов"><svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+          </article>
+
+          <!-- Сценарий 2: RAG Ассистент -->
+          <article class="solution-row">
+            <span class="row-number">02</span>
+            <div>
+              <h3>Корпоративный RAG-ассистент по регламентам и базе знаний</h3>
+              <p>Интеллектуальный помощник прямо в окне 1С или корпоративном Telegram-боте. Менеджеры, бухгалтеры и цеховые мастера задают вопросы на естественном языке («Какая норма списания сырья для спецификации №4?», «Почему заблокирована отгрузка ООО "Ромашка"?»). ИИ отвечает за секунды на основе внутренних регламентов и данных регистров 1С.</p>
+              <div class="tags"><span>RAG-архитектура</span><span>База знаний 1С</span><span>Естественный язык</span><span>Быстрый ввод новичков</span></div>
+            </div>
+            <a href="#contacts" class="row-link" aria-label="Обсудить корпоративного ассистента"><svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+          </article>
+
+          <!-- Сценарий 3: Предиктивный склад -->
+          <article class="solution-row">
+            <span class="row-number">03</span>
+            <div>
+              <h3>Предиктивное планирование закупок и производства</h3>
+              <p>Алгоритмы машинного обучения анализируют ретроспективные продажи, сезонность, сроки плеча поставки и темпы отгрузок по кластерам маркетплейсов. Модель формирует точные заказы поставщикам и задания на производство, предотвращая дефицит (Out-of-Stock) и заморозку оборотного капитала в неликвидах.</p>
+              <div class="tags"><span>ML-прогнозирование</span><span>Неснижаемые остатки</span><span>Управление запасами</span><span>Защита от Out-of-Stock</span></div>
+            </div>
+            <a href="#contacts" class="row-link" aria-label="Обсудить предиктивное планирование"><svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+          </article>
+
+          <!-- Сценарий 4: Детекция аномалий -->
+          <article class="solution-row">
+            <span class="row-number">04</span>
+            <div>
+              <h3>ИИ-контроль себестоимости и поиск финансовых аномалий</h3>
+              <p>Непрерывный фоновый мониторинг закрытия 20/25/26 счетов в 1С:ERP и 1С:КА. Нейросеть мгновенно подсвечивает отклонения от нормативных калькуляций, нетипичный рост косвенных расходов, дубли счетов на оплату и ошибки распределения затрат до формирования регламентированной отчетности.</p>
+              <div class="tags"><span>Контроль себестоимости</span><span>Аудит 20/25/26 счетов</span><span>Детекция аномалий</span><span>Финансовая безопасность</span></div>
+            </div>
+            <a href="#contacts" class="row-link" aria-label="Обсудить контроль себестоимости"><svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+          </article>
+        </div>
+
+        <!-- Интерактивное демо ИИ-ассистента внутри 1С -->
+        <div class="ai-demo-box spotlight-card">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+            <span class="visual-badge"><span class="visual-status"></span> Интерактивное демо · Корпоративный ИИ-модуль в 1С</span>
+            <span style="font-size:12px;color:#94a3b8;">On-Premise контур · Без передачи данных во внешние облака</span>
+          </div>
+          <h3 style="margin:14px 0 6px;font-size:22px;color:#fff;">Протестируйте сценарии работы нейросети в 1С</h3>
+          <p style="margin:0;color:#94a3b8;font-size:14px;">Нажмите на любой рабочий запрос, чтобы увидеть, как ИИ-модуль анализирует первичку, себестоимость и складские остатки:</p>
+          <div class="ai-demo-prompts">
+            <button type="button" class="ai-prompt-btn active" data-ai-key="cost">🔍 Почему выросла себестоимость на 20 счете в Цехе №2?</button>
+            <button type="button" class="ai-prompt-btn" data-ai-key="upd">📄 Распознать скан УПД поставщика и сопоставить номенклатуру</button>
+            <button type="button" class="ai-prompt-btn" data-ai-key="stock">📦 Рассчитать прогноз дефицита по складам Ozon / WB</button>
+          </div>
+          <div class="ai-chat-window" id="ai-chat-output">
+            <strong>Ответ RAG-ассистента 1С:ERP (за 0,8 сек):</strong> В подразделении «Цех металлообработки №2» за октябрь зафиксирован перерасход по ст. «Инструмент и оснастка» (+18,4% к нормативу спецификации №14-М). Основной документ отклонения: <em>Требование-накладная №000418 от 24.10</em>. Рекомендую проверить списание твердосплавных пластин по заказу #382.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Архитектура безопасности данных -->
+    <section class="why-us-section section reveal-block" id="security">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 02 / Архитектура безопасности</p>
+            <h2>Конфиденциальность корпоративных данных<br><span class="muted">без утечек во внешние сети</span></h2>
+          </div>
+          <p class="section-intro">Главное требование собственников и службы безопасности при внедрении ИИ — сохранность коммерческой тайны. Наша архитектура исключает передачу баз данных публичным облачным провайдерам.</p>
+        </div>
+
+        <div class="why-us-grid">
+          <article class="why-card spotlight-card">
+            <span class="why-card-num">01 / On-Premise контур</span>
+            <h3>Локальное развертывание модели</h3>
+            <p>Языковые модели разворачиваются на ваших собственных GPU-серверах или в изолированном частном облаке Tier III в РФ (по 152-ФЗ). Данные вашей 1С не покидают защищенный периметр предприятия.</p>
+          </article>
+
+          <article class="why-card spotlight-card">
+            <span class="why-card-num">02 / Ролевой доступ (RLS)</span>
+            <h3>Строгое соблюдение прав 1С</h3>
+            <p>ИИ-ассистент обращается к базе строго в рамках ролевых прав (RLS) конкретного пользователя 1С. Сотрудник склада или линейный менеджер никогда не получит через чат доступ к ФОТ или финансовой отчетности.</p>
+          </article>
+
+          <article class="why-card spotlight-card">
+            <span class="why-card-num">03 / Без ломки типовой 1С</span>
+            <h3>Микросервисы через REST API (.cfe)</h3>
+            <p>Вся интеграция выполняется через изолированное расширение (.cfe) и асинхронный API-коннектор. Рабочая база 1С не нагружается вычислениями нейросети и сохраняет полную совместимость с обновлениями.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контактная форма -->
+    <section class="contact-section section reveal-block" id="contacts">
+      <div class="container">
+        <div class="section-heading contact-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 03 / Заявка на пилот</p>
+            <h2>Запустить пилотный ИИ-проект<br>в вашей <span class="muted">1С за 14 дней</span></h2>
+          </div>
+          <p class="section-intro">Опишите задачу или приложите примеры документов для распознавания. Ведущий архитектор Нано Софт подготовит демонстрацию и рассчитает смету пилота.</p>
+        </div>
+        <div class="contact-layout">
+          <form class="contact-form" id="consultation-form">
+            <div class="form-grid">
+              <label>Ваше имя <input name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required></label>
+              <label>Компания <input name="company" type="text" autocomplete="organization" placeholder="Название компании"></label>
+            </div>
+            <div class="form-grid">
+              <label>Телефон, Telegram или email <input name="contact" type="text" autocomplete="email" placeholder="+7 900 000-00-00 или @username" required></label>
+              <label>Сценарий ИИ
+                <select name="service" required>
+                  <option value="" disabled selected>Выберите сценарий</option>
+                  <option>Авторазбор первичных документов (OCR + LLM-сопоставление НСИ)</option>
+                  <option>RAG-ассистент по регламентам и базе знаний 1С</option>
+                  <option>Предиктивное планирование запасов и спроса</option>
+                  <option>Контроль себестоимости (20/25/26) и поиск учетных аномалий</option>
+                  <option>Очистка и дедупликация справочников НСИ с помощью ИИ</option>
+                </select>
+              </label>
+            </div>
+            
+            <label class="file-upload-label">
+              <div class="file-upload-icon"><svg><use href="#icon-up"/></svg></div>
+              <div class="file-upload-text">
+                <strong>Прикрепить ТЗ или пример документов для теста OCR</strong>
+                <span>PDF, DOCX, PNG, ZIP до 25 МБ</span>
+              </div>
+              <input type="file" name="attachment" id="task-file-input">
+            </label>
+            <label>О задаче <textarea name="task" rows="4" placeholder="Какая конфигурация 1С используется (ERP, КА, УТ, УНФ, БП)? Какую рутинную операцию хотите автоматизировать в первую очередь?"></textarea></label>
+
+            <label class="consent"><input type="checkbox" required><span>Согласен на обработку персональных данных для ответа на обращение и подготовки коммерческого предложения.</span></label>
+            <div class="form-bottom">
+              <button class="button" type="submit" id="submit-btn">Запросить демо ИИ на ваших документах <svg aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+              <p id="form-message" role="status" class="form-status-msg"></p>
+            </div>
+          </form>
+          <aside class="contact-aside">
+            <p class="aside-label">Быстрая связь с архитектором</p>
+            <a class="contact-large" href="tel:+78124071767">+7 (812) 407-17-67</a>
+            <div class="aside-links">
+              <a class="contact-tg-btn" href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="#icon-tg"/></svg>
+                <span>Написать в Telegram</span>
+              </a>
+              <a class="contact-email" href="mailto:info@nanosoft-team.ru">info@nanosoft-team.ru <svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+            </div>
+            <div class="aside-divider"></div>
+            <p class="aside-label">География и центр разработки</p>
+            <address>Работаем с предприятиями по всей РФ и СНГ.<br>Инженерный центр: г. Вологда, ул. Октябрьская, д. 27</address>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-icon"><img src="https://nanosoft.team/favicon.ico" alt="" width="30" height="30"></span><span class="brand-name">НАНО<span>СОФТ</span></span></a>
+        <p>Комплексная автоматизация производства, складов, маркетплейсов и внедрение искусственного интеллекта на базе 1С:ERP и 1С:КА.</p>
+      </div>
+      <div>
+        <h3>Навигация</h3>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О компании и сертификаты</a>
+        <a href="vnedrenie-1c.html">Внедрение 1С и переходы</a>
+        <a href="ai.html">Внедрение ИИ в 1С (Нейросети)</a>
+        <a href="marketplaces.html">Маркетплейсы</a>
+        <a href="markirovka.html">Маркировка и «Честный Знак»</a>
+        <a href="bitrix24.html">Битрикс24 и CRM</a>
+        <a href="servers.html">Аренда серверов 1С</a>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <a href="#contacts">Оставить заявку</a>
+        <a href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer">Telegram-чат с инженером</a>
+        <a href="tel:+78124071767">+7 (812) 407-17-67</a>
+        <a href="mailto:info@nanosoft-team.ru">info@nanosoft-team.ru</a>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <p>ООО «НАНО СОФТ»<br>ИНН 3500005965<br>ОГРН 1243500004000</p>
+      </div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 ООО «НАНО СОФТ»</span><span>Внедрение · Разработка · Сопровождение</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

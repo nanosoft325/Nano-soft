@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f9fa">
+  <meta name="description" content="Нано Софт — комплексная автоматизация маркировки «Честный Знак» (True API, СУЗ, ТС ПИоТ, ЛМ ЧЗ), ВетИС «Меркурий», интеграция с 1С:ERP, КА, УТ, ТСД и производственными линиями.">
+  <title>Нано Софт — Маркировка «Честный Знак», ТС ПИоТ и прослеживаемость в 1С под ключ</title>
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Нано Софт">
+  <meta property="og:title" content="Нано Софт — Маркировка «Честный Знак», ТС ПИоТ и ЛМ ЧЗ в 1С под ключ">
+  <meta property="og:description" content="Прямая интеграция True API и СУЗ, разрешительный режим на кассах (ТС ПИоТ, ЛМ ЧЗ), потоковая печать DataMatrix на линиях, ТСД DataMobile, ВетИС Меркурий и ЭДО.">
+  <meta property="og:url" content="https://nanosoft.team/markirovka.html">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path d="m5 12 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-up" viewBox="0 0 24 24">
+      <path d="M5 19 19 5M7 5h12v12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-tg" viewBox="0 0 24 24">
+      <path d="M21.5 4.5 2.8 11.7c-1.3.5-1.3 1.3-.2 1.6l4.8 1.5 11.1-7c.5-.3 1-.1.6.2L10.9 16.3l-.3 4.6c.5 0 .7-.2 1-.5l2.4-2.3 5 3.7c.9.5 1.6.2 1.8-.8l3.3-15.5c.3-1.3-.5-1.9-1.3-1.5z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-exchange" viewBox="0 0 24 24">
+      <path d="M4 8h16m0 0l-4-4m4 4l-4 4M20 16H4m0 0l4-4m-4 4l4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Нано Софт — на главную">
+        <span class="brand-icon">
+          <img src="https://nanosoft.team/favicon.ico" alt="" width="30" height="30">
+        </span>
+        <span class="brand-name">НАНО<span>СОФТ</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <button class="nav-hub-btn" type="button" aria-expanded="false" data-mega-target="hub-products">
+          Продукты <svg aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+
+        <button class="nav-hub-btn" type="button" aria-expanded="false" data-mega-target="hub-solutions">
+          Решения <svg aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+
+        <button class="nav-hub-btn" type="button" aria-expanded="false" data-mega-target="hub-company">
+          О компании <svg aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+
+        <a class="nav-direct-link" href="index.html#cases">Кейсы</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-icon-tg" href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer" aria-label="Telegram Нано Софт">
+          <svg aria-hidden="true"><use href="#icon-tg"/></svg>
+        </a>
+        <a class="header-contact" href="tel:+78124071767">+7 (812) 407-17-67</a>
+        <a class="button button-small header-cta" href="#contacts">
+          Обсудить задачу
+          <svg aria-hidden="true"><use href="#icon-arrow"/></svg>
+        </a>
+      </div>
+
+      <details class="mobile-menu">
+        <summary aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </summary>
+        <nav aria-label="Мобильная навигация">
+          <a href="index.html">Главная</a>
+          <a href="vnedrenie-1c.html">Внедрение 1С и переходы</a>
+          <a href="ai.html">Внедрение ИИ в 1С (Нейросети)</a>
+          <a href="index.html#solutions">Внедрение 1С:ERP / КА</a>
+          <a href="marketplaces.html">Маркетплейсы (Ozon, WB, Яндекс, Авито)</a>
+          <a href="markirovka.html">Маркировка и «Честный Знак»</a>
+          <a href="bitrix24.html">Битрикс24 и CRM</a>
+          <a href="servers.html">Аренда серверов 1С</a>
+          <a href="about.html">О компании и сертификаты</a>
+          <a href="index.html#cases">Кейсы</a>
+          <a href="#contacts">Контакты</a>
+          <a href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+          <a href="tel:+78124071767">+7 (812) 407-17-67</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <div class="mega-menu-overlay" aria-hidden="true"></div>
+
+  <!-- Хаб 1: Продукты -->
+  <div class="mega-dropdown-panel" id="hub-products" role="region" aria-label="Продукты 1С и платформы">
+    <div class="floating-menu-grid">
+      <a class="floating-menu-card" href="vnedrenie-1c.html">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Внедрение 1С с нуля и переходы</strong>
+          <span>Запуск новой системы, миграция с УПП / 7.7 и перенос данных</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="ai.html">
+        <div class="floating-card-icon"><svg><use href="#icon-exchange"/></svg></div>
+        <div class="floating-card-body">
+          <strong>ИИ &amp; Нейросети в 1С</strong>
+          <span>LLM-ассистенты, OCR первички и предиктивная аналитика</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#tab-erp">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>1С:ERP &amp; КА 2.5</strong>
+          <span>Комплексный учет, себестоимость и 20/25/26 счета</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="marketplaces.html">
+        <div class="floating-card-icon"><svg><use href="#icon-exchange"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Маркетплейсы (Ozon, WB, Яндекс, Авито)</strong>
+          <span>Остатки без оверсейлов и потоварная юнит-экономика</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#tab-wms">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Склад WMS &amp; ТСД DataMobile</strong>
+          <span>Адресное хранение, зонирование и сборка по штрихкодам</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="bitrix24.html">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Битрикс24 Enterprise</strong>
+          <span>CRM, сквозная телефония и двусторонний обмен с 1С</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="servers.html">
+        <div class="floating-card-icon"><svg><use href="#icon-up"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Серверы 1С (NVMe) и ускорение баз</strong>
+          <span>Tier III ЦОД в РФ по 152-ФЗ, устранение блокировок СУБД</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Хаб 2: Решения -->
+  <div class="mega-dropdown-panel" id="hub-solutions" role="region" aria-label="Отраслевые решения">
+    <div class="floating-menu-grid">
+      <a class="floating-menu-card" href="markirovka.html">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Маркировка «Честный Знак», ТС ПИоТ и ЛМ ЧЗ</strong>
+          <span>True API, СУЗ, разрешительный режим на кассах и агрегация</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="markirovka.html#vetis">
+        <div class="floating-card-icon"><svg><use href="#icon-exchange"/></svg></div>
+        <div class="floating-card-body">
+          <strong>ВетИС «Меркурий», ЕГАИС и МДЛП</strong>
+          <span>Автоматическое гашение и оформление эВСД внутри 1С</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="vnedrenie-1c.html#migration-routes">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Переход с 1С:УПП 1.3 и 7.7 без простоев</strong>
+          <span>Бесшовная миграция справочников, остатков и доработок за выходные</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#connected">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Шина обмена данных &amp; REST API</strong>
+          <span>Микросервисы связки 1С с оборудованием и дилерскими сетями</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Хаб 3: О компании -->
+  <div class="mega-dropdown-panel" id="hub-company" role="region" aria-label="О компании">
+    <div class="floating-menu-grid">
+      <a class="floating-menu-card" href="about.html">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>О компании и сертификаты</strong>
+          <span>Команда, компетенции 1С и подход к проектам</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#why-us">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Почему Нано Софт</strong>
+          <span>Прямой контакт с ведущим архитектором без бюрократии</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#workflow">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Методология по ГОСТ</strong>
+          <span>5 прозрачных этапов от предпроектного аудита до запуска</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#guarantees">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Гарантии, NDA и SLA</strong>
+          <span>Защита данных по NDA, фиксированные этапы и 12 месяцев гарантии</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#calculator">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Экспресс-калькулятор</strong>
+          <span>Интерактивный расчет сроков и рекомендуемого стека</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- Hero раздел: Маркировка и Честный Знак -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="auto" poster="media/hero-poster.jpg">
+          <source src="media/hero.mp4" type="video/mp4">
+        </video>
+        <div class="server-fallback"><span></span><span></span><span></span><span></span></div>
+      </div>
+      <div class="hero-shade"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Сквозная прослеживаемость · True API · СУЗ · ТС ПИоТ и ЛМ ЧЗ</p>
+          <h1 id="hero-title">Маркировка «Честный Знак»<br>под ключ <em>в 1С, на линиях и кассах</em></h1>
+          <p class="hero-description">Автоматизируем полный цикл обязательной маркировки без ручной работы в личном кабинете ЦРПТ: автоматический заказ кодов через СУЗ, потоковая печать DataMatrix на линиях, агрегация на ТСД, разрешительный режим на кассах (ТС ПИоТ и локальный модуль ЛМ ЧЗ), ВетИС «Меркурий» и поэкземплярный ЭДО.</p>
+          <div class="hero-actions">
+            <a class="button button-bright" href="#contacts">
+              Рассчитать проект маркировки
+              <svg aria-hidden="true"><use href="#icon-arrow"/></svg>
+            </a>
+            <a class="text-link text-link-light" href="#solutions">Возможности и контуры <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="hero-proof">
+          <span>Прямой протокол True API и СУЗ ЦРПТ</span>
+          <span>Разрешительный режим: ТС ПИоТ и ЛМ ЧЗ без ошибок 453/500</span>
+          <span>ТСД DataMobile, ВетИС «Меркурий» и маркетплейсы</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Двойная бегущая строка -->
+    <section class="tech-marquee-section" aria-label="Технологии маркировки и Честный Знак">
+      <div class="tech-grid-overlay" aria-hidden="true"></div>
+      <div class="ticker-dual">
+        <div class="ticker ticker-forward" aria-hidden="true">
+          <div class="ticker-track">
+            <span>Эмиссия кодов маркировки в СУЗ<b class="tk-sep">◆</b>Прямое нанесение DataMatrix на линиях<b class="tk-sep">◆</b>Агрегация короб / паллета SSCC<b class="tk-sep">◆</b>Разрешительный режим на кассах и ТС ПИоТ<b class="tk-sep">◆</b>Интеграция с DataMobile ТСД<b class="tk-sep">◆</b></span>
+            <span>Эмиссия кодов маркировки в СУЗ<b class="tk-sep">◆</b>Прямое нанесение DataMatrix на линиях<b class="tk-sep">◆</b>Агрегация короб / паллета SSCC<b class="tk-sep">◆</b>Разрешительный режим на кассах и ТС ПИоТ<b class="tk-sep">◆</b>Интеграция с DataMobile ТСД<b class="tk-sep">◆</b></span>
+          </div>
+        </div>
+        <div class="ticker ticker-backward" aria-hidden="true">
+          <div class="ticker-track">
+            <span>Офлайн-проверка через Локальный модуль ЧЗ<b class="tk-sep">◆</b>Отгрузка на Wildberries и Ozon без штрафов<b class="tk-sep">◆</b>ВетИС «Меркурий» и ЕГАИС<b class="tk-sep">◆</b>Поэкземплярный учет в УПД ЭДО<b class="tk-sep">◆</b></span>
+            <span>Офлайн-проверка через Локальный модуль ЧЗ<b class="tk-sep">◆</b>Отгрузка на Wildberries и Ozon без штрафов<b class="tk-sep">◆</b>ВетИС «Меркурий» и ЕГАИС<b class="tk-sep">◆</b>Поэкземплярный учет в УПД ЭДО<b class="tk-sep">◆</b></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ключевые возможности и контуры -->
+    <section class="solutions section reveal-block" id="solutions">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 01 / Архитектура и контуры</p>
+            <h2>Все операции «Честный Знак»<br>внутри <span class="muted">интерфейса 1С и на складе</span></h2>
+          </div>
+          <p class="section-intro">Сотрудники склада, цеха и розницы работают в привычной учетной системе 1С. Все взаимодействия с серверами ЦРПТ, принтерами, кассами и ЭДО происходят автоматически.</p>
+        </div>
+
+        <div class="solution-list">
+          <article class="solution-row">
+            <span class="row-number">01</span>
+            <div>
+              <h3>Автоматическая эмиссия кодов из СУЗ и True API</h3>
+              <p>Заказ пулов кодов маркировки по расписанию под плановый выпуск продукции или импортные таможенные декларации (ГТД). Защита от дублей, контроль сроков жизни КМ и автоматический мониторинг баланса лицевого счета ЦРПТ.</p>
+              <div class="tags"><span>True API</span><span>СУЗ ЦРПТ</span><span>Партионный заказ</span><span>Таможенный импорт</span></div>
+            </div>
+            <a href="#contacts" class="row-link" aria-label="Заказ кодов в СУЗ"><svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+          </article>
+
+          <article class="solution-row">
+            <span class="row-number">02</span>
+            <div>
+              <h3>Производственная маркировка, нанесение и ввод в оборот</h3>
+              <p>Интеграция принтеров-аппликаторов, каплеструйных маркираторов и конвейерных камер технического зрения с 1С. Потоковая печать DataMatrix, верификация считывания, отбраковка нечитаемых этикеток и мгновенный ввод партий в оборот.</p>
+              <div class="tags"><span>Сервер печати</span><span>DataMatrix</span><span>Верификаторы</span><span>Ввод в оборот</span></div>
+            </div>
+            <a href="#contacts" class="row-link" aria-label="Производственная маркировка"><svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+          </article>
+
+          <article class="solution-row">
+            <span class="row-number">03</span>
+            <div>
+              <h3>Складская агрегация на ТСД (DataMobile) и отгрузка на маркетплейсы</h3>
+              <p>Многоуровневая агрегация (штука → короб → паллета) с генерацией групповых кодов SSCC. Автоматическое поэкземплярное заполнение кодов маркировки в электронных УПД (Диадок / СБИС) и сверка на ТСД при отгрузке в торговые сети, на Ozon и Wildberries.</p>
+              <div class="tags"><span>DataMobile Маркировка</span><span>Коды SSCC</span><span>Поэкземплярный УПД</span><span>Wildberries &amp; Ozon</span></div>
+            </div>
+            <a href="#contacts" class="row-link" aria-label="Складская агрегация и маркетплейсы"><svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+          </article>
+
+          <article class="solution-row" id="vetis">
+            <span class="row-number">04</span>
+            <div>
+              <h3>ВетИС «Меркурий», ЕГАИС и МДЛП</h3>
+              <p>Сквозное гашение и оформление электронных ВСД для пищевых производств и дистрибьюторов, а также контур движения медицинских препаратов и изделий (МДЛП). Автоматическая сверка партий сырья с готовой продукцией в единой базе 1С.</p>
+              <div class="tags"><span>ВетИС API</span><span>эВСД</span><span>ЕГАИС</span><span>МДЛП Медицина</span></div>
+            </div>
+            <a href="#contacts" class="row-link" aria-label="Меркурий и ЕГАИС"><svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+          </article>
+
+          <article class="solution-row" id="tspiot">
+            <span class="row-number">05</span>
+            <div>
+              <h3>Разрешительный режим на кассах, модуль ТС ПИоТ и офлайн-проверка (ЛМ ЧЗ)</h3>
+              <p>Защищаем розничные сети и оптово-розничные склады от остановки продаж при сбоях интернета или серверов ЦРПТ. Настраиваем разрешительный режим в 1С, устанавливаем и регистрируем модуль ТС ПИоТ (ФФД 1.2) и разворачиваем Локальный модуль «Честный Знак» для мгновенной офлайн-проверки кодов DataMatrix без кассовых ошибок 453 и 500.</p>
+              <div class="tags"><span>ТС ПИоТ</span><span>Локальный модуль ЧЗ</span><span>Разрешительный режим</span><span>ФФД 1.2 без сбоев</span></div>
+            </div>
+            <a href="#contacts" class="row-link" aria-label="Настройка ТС ПИоТ и ЛМ ЧЗ"><svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Результаты внедрения ЧЗ в цифрах -->
+    <section class="results section reveal-block">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 02 / Эффективность</p>
+            <h2>Работа без штрафов<br>и <span class="muted">ручных ошибок</span></h2>
+          </div>
+          <p class="section-intro">Показатели производственных, пищевых и торговых предприятий после внедрения интеграционного контура Нано Софт.</p>
+        </div>
+        <div class="metrics">
+          <div class="metric metric-primary"><strong>0<span>%</span></strong><p>штрафов за пересорт и невалидные КМ при отгрузке</p></div>
+          <div class="metric"><strong>до 3 <span>раз</span></strong><p>ускорение сборки и отгрузки заказов сетям и маркетплейсам</p></div>
+          <div class="metric"><strong>100<span>%</span></strong><p>автоматизация обмена с ЦРПТ, ЛМ ЧЗ и ЭДО внутри 1С</p></div>
+          <div class="metric"><strong>от 7 <span>дней</span></strong><p>типовой срок запуска рабочего контура маркировки</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Этапы запуска маркировки -->
+    <section class="workflow section reveal-block" id="workflow">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> 03 / Внедрение</p>
+            <h2>Этапы автоматизации<br><span class="muted">контура «Честный Знак»</span></h2>
+          </div>
+          <p class="section-intro">От обследования линий и тестовой эмиссии в СУЗ до настройки касс, обучения персонала и запуска промышленной серии.</p>
+        </div>
+        <ol class="timeline">
+          <li><span class="timeline-step">01</span><h3>Аудит линий и 1С</h3><p>Анализ скорости упаковки, форм-фактора тары, кассового ПО и текущей конфигурации 1С.</p></li>
+          <li><span class="timeline-step">02</span><h3>Подбор оборудования</h3><p>Выбор ТСД, промышленных принтеров-аппликаторов, 2D-сканеров и камер технического зрения.</p></li>
+          <li><span class="timeline-step">03</span><h3>Интеграция СУЗ и ЛМ ЧЗ</h3><p>Настройка прямого обмена 1С со станцией управления заказами (СУЗ), ТС ПИоТ, ЭДО и DataMobile.</p></li>
+          <li><span class="timeline-step">04</span><h3>Пилотная партия</h3><p>Тестовая эмиссия КМ, нанесение, агрегация коробов SSCC и контрольная передача УПД.</p></li>
+          <li><span class="timeline-step">05</span><h3>Поддержка по SLA</h3><p>Инженерное сопровождение при выходе новых волн маркировки и обновлениях форматов ЦРПТ и ФНС.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Контактная форма -->
+    <section class="contact-section section reveal-block" id="contacts">
+      <div class="container">
+        <div class="section-heading contact-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 04 / Консультация</p>
+            <h2>Запустить проект<br>по <span class="muted">маркировке «Честный Знак»</span></h2>
+          </div>
+          <p class="section-intro">Расскажите о вашей товарной группе, объемах выпуска и текущей версии 1С. Архитектор Нано Софт подготовит решение и расчет стоимости.</p>
+        </div>
+        <div class="contact-layout">
+          <form class="contact-form" id="consultation-form">
+            <div class="form-grid">
+              <label>Ваше имя <input name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required></label>
+              <label>Компания <input name="company" type="text" autocomplete="organization" placeholder="Название компании"></label>
+            </div>
+            <div class="form-grid">
+              <label>Телефон, Telegram или email <input name="contact" type="text" autocomplete="email" placeholder="+7 900 000-00-00 или @username" required></label>
+              <label>Товарная группа / Задача
+                <select name="service" required>
+                  <option value="" disabled selected>Выберите категорию или задачу</option>
+                  <option>Разрешительный режим на кассах (ТС ПИоТ и ЛМ ЧЗ)</option>
+                  <option>Парфюмерия, косметика и бытовая химия</option>
+                  <option>Вода, напитки, сладости и пищевая продукция (+ Меркурий)</option>
+                  <option>Одежда, обувь, текстиль и детские товары / игрушки</option>
+                  <option>Моторные масла, смазочные материалы, автохимия и шины</option>
+                  <option>Медицинские изделия, БАДы и лекарства (МДЛП)</option>
+                  <option>Другая товарная группа / Комплексный проект</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="file-upload-label">
+              <div class="file-upload-icon"><svg><use href="#icon-up"/></svg></div>
+              <div class="file-upload-text">
+                <strong>Прикрепить ТЗ или описание линий / склада</strong>
+                <span>PDF, DOCX, ZIP до 25 МБ</span>
+              </div>
+              <input type="file" name="attachment" id="task-file-input">
+            </label>
+            <label>Параметры задачи <textarea name="task" rows="4" placeholder="Какая конфигурация 1С установлена? Нужен ли подбор принтеров, ТСД, настройка ТС ПИоТ / ЛМ ЧЗ или отгрузка на маркетплейсы?"></textarea></label>
+
+            <label class="consent"><input type="checkbox" required><span>Согласен на обработку персональных данных для ответа на обращение и подготовки коммерческого предложения.</span></label>
+            <div class="form-bottom">
+              <button class="button" type="submit" id="submit-btn">Рассчитать контур маркировки <svg aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+              <p id="form-message" role="status" class="form-status-msg"></p>
+            </div>
+          </form>
+          <aside class="contact-aside">
+            <p class="aside-label">Быстрая связь с архитектором</p>
+            <a class="contact-large" href="tel:+78124071767">+7 (812) 407-17-67</a>
+            <div class="aside-links">
+              <a class="contact-tg-btn" href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="#icon-tg"/></svg>
+                <span>Написать в Telegram</span>
+              </a>
+              <a class="contact-email" href="mailto:info@nanosoft-team.ru">info@nanosoft-team.ru <svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+            </div>
+            <div class="aside-divider"></div>
+            <p class="aside-label">География и центр разработки</p>
+            <address>Работаем с предприятиями по всей РФ и СНГ.<br>Инженерный центр: г. Вологда, ул. Октябрьская, д. 27</address>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-icon"><img src="https://nanosoft.team/favicon.ico" alt="" width="30" height="30"></span><span class="brand-name">НАНО<span>СОФТ</span></span></a>
+        <p>Комплексная автоматизация производства, складов, маркировки и учета на базе 1С:ERP, 1С:КА и микросервисов.</p>
+      </div>
+      <div>
+        <h3>Навигация</h3>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О компании и сертификаты</a>
+        <a href="vnedrenie-1c.html">Внедрение 1С и переходы</a>
+        <a href="ai.html">Внедрение ИИ в 1С (Нейросети)</a>
+        <a href="marketplaces.html">Маркетплейсы</a>
+        <a href="markirovka.html">Маркировка и «Честный Знак»</a>
+        <a href="bitrix24.html">Битрикс24 и CRM</a>
+        <a href="servers.html">Аренда серверов 1С</a>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <a href="#contacts">Оставить заявку</a>
+        <a href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer">Telegram-чат с инженером</a>
+        <a href="tel:+78124071767">+7 (812) 407-17-67</a>
+        <a href="mailto:info@nanosoft-team.ru">info@nanosoft-team.ru</a>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <p>ООО «НАНО СОФТ»<br>ИНН 3500005965<br>ОГРН 1243500004000</p>
+      </div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 ООО «НАНО СОФТ»</span><span>Внедрение · Разработка · Сопровождение</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

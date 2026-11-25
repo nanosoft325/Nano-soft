@@ -1,0 +1,1324 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Нано Софт — комплексное внедрение 1С:ERP, 1С:КА, WMS, систем маркировки «Честный Знак» (ТС ПИоТ, ЛМ ЧЗ), ВетИС «Меркурий» и разработка интеграций.">
+  <title>Нано Софт — Инженерная автоматизация и внедрение 1С:ERP</title>
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Нано Софт">
+  <meta property="og:title" content="Нано Софт — Инженерная автоматизация и внедрение 1С:ERP">
+  <meta property="og:description" content="Связываем производство, ячеистый склад, ТСД и бухгалтерию в единый прозрачный контур на базе 1С:ERP и микросервисов.">
+  <meta property="og:url" content="https://nanosoft.team/">
+  <meta property="og:image" content="https://nanosoft.team/og-image.jpg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path d="m5 12 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-up" viewBox="0 0 24 24">
+      <path d="M5 19 19 5M7 5h12v12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-tg" viewBox="0 0 24 24">
+      <path d="M21.5 4.5 2.8 11.7c-1.3.5-1.3 1.3-.2 1.6l4.8 1.5 11.1-7c.5-.3 1-.1.6.2L10.9 16.3l-.3 4.6c.5 0 .7-.2 1-.5l2.4-2.3 5 3.7c.9.5 1.6.2 1.8-.8l3.3-15.5c.3-1.3-.5-1.9-1.3-1.5z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-exchange" viewBox="0 0 24 24">
+      <path d="M4 8h16m0 0l-4-4m4 4l-4 4M20 16H4m0 0l4-4m-4 4l4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Нано Софт — на главную">
+        <span class="brand-icon">
+          <img src="https://nanosoft.team/favicon.ico" alt="" width="30" height="30">
+        </span>
+        <span class="brand-name">НАНО<span>СОФТ</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <button class="nav-hub-btn" type="button" aria-expanded="false" data-mega-target="hub-products">
+          Продукты <svg aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+
+        <button class="nav-hub-btn" type="button" aria-expanded="false" data-mega-target="hub-solutions">
+          Решения <svg aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+
+        <button class="nav-hub-btn" type="button" aria-expanded="false" data-mega-target="hub-company">
+          О компании <svg aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+
+        <a class="nav-direct-link" href="#cases">Кейсы</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-icon-tg" href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer" aria-label="Telegram Нано Софт">
+          <svg aria-hidden="true"><use href="#icon-tg"/></svg>
+        </a>
+        <a class="header-contact" href="tel:+78124071767">+7 (812) 407-17-67</a>
+        <a class="button button-small header-cta" href="#contacts">
+          Обсудить задачу
+          <svg aria-hidden="true"><use href="#icon-arrow"/></svg>
+        </a>
+      </div>
+
+      <details class="mobile-menu">
+        <summary aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </summary>
+        <nav aria-label="Мобильная навигация">
+          <a href="vnedrenie-1c.html">Внедрение 1С и переходы</a>
+          <a href="ai.html">Внедрение ИИ в 1С (Нейросети)</a>
+          <a href="#solutions">Внедрение 1С:ERP / КА</a>
+          <a href="marketplaces.html">Маркетплейсы (Ozon, WB, Яндекс, Авито)</a>
+          <a href="markirovka.html">Маркировка и «Честный Знак»</a>
+          <a href="bitrix24.html">Битрикс24 и CRM</a>
+          <a href="servers.html">Аренда серверов 1С</a>
+          <a href="about.html">О компании и сертификаты</a>
+          <a href="#cases">Кейсы</a>
+          <a href="#contacts">Контакты</a>
+          <a href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+          <a href="tel:+78124071767">+7 (812) 407-17-67</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <div class="mega-menu-overlay" aria-hidden="true"></div>
+
+  <!-- Хаб 1: Продукты и направления -->
+  <div class="mega-dropdown-panel" id="hub-products" role="region" aria-label="Продукты 1С и платформы">
+    <div class="floating-menu-grid">
+      <a class="floating-menu-card" href="vnedrenie-1c.html">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Внедрение 1С с нуля и переходы</strong>
+          <span>Запуск новой системы, миграция с УПП / 7.7 и перенос данных</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="ai.html">
+        <div class="floating-card-icon"><svg><use href="#icon-exchange"/></svg></div>
+        <div class="floating-card-body">
+          <strong>ИИ &amp; Нейросети в 1С</strong>
+          <span>LLM-ассистенты, OCR первички и предиктивная аналитика</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="#tab-erp">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>1С:ERP &amp; КА 2.5</strong>
+          <span>Комплексный учет, себестоимость и 20/25/26 счета</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="marketplaces.html">
+        <div class="floating-card-icon"><svg><use href="#icon-exchange"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Маркетплейсы (Ozon, WB, Яндекс, Авито)</strong>
+          <span>Остатки без оверсейлов и потоварная юнит-экономика</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="#tab-wms">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Склад WMS &amp; ТСД DataMobile</strong>
+          <span>Адресное хранение, зонирование и сборка по штрихкодам</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="bitrix24.html">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Битрикс24 Enterprise</strong>
+          <span>CRM, сквозная телефония и двусторонний обмен с 1С</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="servers.html">
+        <div class="floating-card-icon"><svg><use href="#icon-up"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Серверы 1С (NVMe) и ускорение баз</strong>
+          <span>Tier III ЦОД в РФ по 152-ФЗ, устранение блокировок СУБД</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Хаб 2: Решения по задачам бизнеса -->
+  <div class="mega-dropdown-panel" id="hub-solutions" role="region" aria-label="Решения по задачам бизнеса">
+    <div class="solutions-menu-intro">
+      <span>РЕШАЕМ ЗАДАЧИ БИЗНЕСА</span>
+      <p>Связываем учет, склад, продажи и внешние государственные контуры в понятные рабочие процессы.</p>
+    </div>
+    <div class="floating-menu-grid solutions-menu-grid">
+      <a class="floating-menu-card" href="markirovka.html">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Маркировка «Честный Знак», ТС ПИоТ и ЛМ ЧЗ</strong>
+          <span>True API, СУЗ, разрешительный режим на кассах и агрегация</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="markirovka.html#vetis">
+        <div class="floating-card-icon"><svg><use href="#icon-exchange"/></svg></div>
+        <div class="floating-card-body">
+          <strong>ВетИС «Меркурий», ЕГАИС и МДЛП</strong>
+          <span>Автоматическое гашение и оформление эВСД внутри 1С</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="vnedrenie-1c.html#migration-routes">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Переход с 1С:УПП 1.3 и 7.7 без простоев</strong>
+          <span>Бесшовная миграция справочников, остатков и доработок за выходные</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="#connected">
+        <div class="floating-card-icon"><svg><use href="#icon-exchange"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Шина обмена данных &amp; REST API</strong>
+          <span>Высоконагруженные микросервисы связки 1С с оборудованием и сайтами</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Хаб 3: О компании и гарантии -->
+  <div class="mega-dropdown-panel" id="hub-company" role="region" aria-label="О компании">
+    <div class="floating-menu-grid">
+      <a class="floating-menu-card" href="about.html">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>О компании и сертификаты</strong>
+          <span>Команда, компетенции 1С и подход к проектам</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="#why-us">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Почему Нано Софт</strong>
+          <span>Прямой контакт с ведущим архитектором без бюрократии</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="#workflow">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Методология по ГОСТ</strong>
+          <span>5 прозрачных этапов от предпроектного аудита до запуска</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="#guarantees">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Гарантии, NDA и SLA</strong>
+          <span>Защита данных по NDA, фиксированные этапы и 12 месяцев гарантии</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="#calculator">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Экспресс-калькулятор</strong>
+          <span>Интерактивный расчет сроков и рекомендуемого стека</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- Первый экран -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="auto" poster="media/hero-poster.jpg">
+          <source src="media/hero.mp4" type="video/mp4">
+        </video>
+        <div class="server-fallback"><span></span><span></span><span></span><span></span></div>
+      </div>
+      <div class="hero-shade"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Инженерная автоматизация операций</p>
+          <h1 id="hero-title">Бизнес работает<br>как <em>единая система</em></h1>
+          <p class="hero-description">Внедряем и развиваем 1С, автоматизируем производство, адресный склад и омниканальные продажи. Объединяем учет, цеховое оборудование, CRM и госсистемы в согласованные бизнес-процессы без остановки предприятия.</p>
+          <div class="hero-capabilities" aria-label="Ключевые направления">
+            <span>Внедрение 1С:ERP и КА 2.5</span><span>Переход с УПП и 7.7</span><span>Склад WMS и Честный Знак</span><span>Интеграции и ИИ в 1С</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-bright" href="#contacts">
+              Обсудить задачу
+              <svg aria-hidden="true"><use href="#icon-arrow"/></svg>
+            </a>
+            <a class="text-link text-link-light" href="#solutions">Изучить платформу <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="hero-proof">
+          <span>Официальный партнер 1С</span>
+          <span>Аккредитованная IT-компания</span>
+          <span>Гарантия 12 месяцев по договору</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. ИНТЕРАКТИВНЫЕ ВКЛАДКИ РЕШЕНИЙ -->
+    <section class="solutions section reveal-block" id="solutions" aria-labelledby="solutions-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 01 / Решения Нано Софт</p>
+            <h2 id="solutions-title">Решения для ключевых<br><span class="muted">контуров предприятия</span></h2>
+          </div>
+          <p class="section-intro">Проектируем и связываем цифровые контуры предприятия: учет и производство, склад, маркировку, продажи, маркетплейсы и корпоративную инфраструктуру.</p>
+        </div>
+
+        <div class="solution-tabs-nav" role="tablist" aria-label="Направления решений">
+          <button class="tab-btn active" role="tab" aria-selected="true" data-tab="tab-erp">Учет и управление</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-wms">Склад и WMS</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-mark">Маркировка</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-market">Маркетплейсы</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-crm">Битрикс24 и B2B</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-ai">ИИ в 1С</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-infra">Серверы 1С</button>
+        </div>
+
+        <div class="solution-tabs-content">
+          <!-- Таб 1: ERP -->
+          <div class="tab-pane active" id="tab-erp" role="tabpanel">
+            <div class="tab-pane-content">
+              <h3>Учет и управление на базе 1С</h3>
+              <p>Подбираем, внедряем и развиваем решения 1С под задачи компании: от автоматизации отдельных участков до комплексных систем управления предприятием. Работаем с 1С:ERP, 1С:КА 2.5, 1С:УТ 11.5 и 1С:УНФ; переносим данные и объединяем подразделения в едином информационном контуре.</p>
+              <ul class="samsara-feature-list">
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Переход с 1С:УПП 1.3 и 7.7:</strong> безопасная миграция до прекращения поддержки УПП, выбор между ERP и КА 2.5 без переплаты за лицензии</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Производство и себестоимость:</strong> многопередельные спецификации, планирование цехов, закрытие 20/25/26 счетов, НЗП и ДДС</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Актуальный налоговый контур:</strong> настройка учета НДС 22%, переходящих авансов, а также ставок НДС 5% / 7% на УСН</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Запуск без остановки:</strong> моделирование на реальных данных компании, сверка сальдо за выходные и ролевое обучение</span></li>
+              </ul>
+              <a class="button button-small" href="vnedrenie-1c.html">Внедрение и переходы 1С <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            </div>
+            <div class="tab-pane-visual">
+              <div class="visual-header"><span class="visual-badge"><span class="visual-status"></span> АРХИТЕКТУРА: УЧЕТ И ПРОИЗВОДСТВО</span><span style="font-size:11px;color:var(--accent-light);font-family:'Manrope',sans-serif;">1С:ERP · КА 2.5 · УТ 11.5</span></div>
+              <div class="visual-title">Единая модель предприятия</div>
+              <div class="visual-desc">Связанные процессы производства, снабжения и финансов вместо разрозненных баз.</div>
+              <div class="pipeline-diagram">
+                <div class="pipeline-node"><span>Производство и снабжение</span><span class="node-tag">Планирование</span></div>
+                <div class="pipeline-node"><span>Склад, продажи и НДС 5%/7%/22%</span><span class="node-tag">Синхронизация</span></div>
+                <div class="pipeline-node"><span>Закрытие 20/25/26 счетов и P&amp;L</span><span class="node-tag">Контроль</span></div>
+              </div>
+              <div class="live-log-container">
+                <div class="live-log-header"><span>Телеметрия контура</span><span class="live-log-pulse"></span></div>
+                <div class="live-log-feed"><div class="log-row"><span class="log-tag">1С:ERP</span><span class="log-msg">Расчет себестоимости выпуска: счета 20/25/26 закрыты без ошибок</span></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Таб 2: WMS -->
+          <div class="tab-pane" id="tab-wms" role="tabpanel">
+            <div class="tab-pane-content">
+              <h3>Складская логистика и WMS</h3>
+              <p>Автоматизируем складские операции на базе 1С и ПО DataMobile: приемку по штрихкодам, адресное размещение, пополнение зон отбора, инвентаризацию, комплектацию и отгрузку под фактическую топологию склада.</p>
+              <ul class="samsara-feature-list">
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>ТСД и DataMobile:</strong> выдача сменных заданий кладовщикам и онлайн-обмен с 1С без бумажных накладных</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Адресное хранение:</strong> ячеистая топология, партии, серийные номера (S/N), ВГХ и контроль сроков годности (FEFO)</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Сборка без пересорта:</strong> блокировка ошибочных позиций на экране терминала при комплектации заказа</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Инвентаризация без простоев:</strong> пересчет ячеек по зонам без остановки ежедневных отгрузок</span></li>
+              </ul>
+              <a class="button button-small" href="#contacts">Рассчитать складской проект <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            </div>
+            <div class="tab-pane-visual">
+              <div class="visual-header"><span class="visual-badge"><span class="visual-status"></span> АРМ: ЯЧЕИСТЫЙ СКЛАД И ТСД</span><span style="font-size:11px;color:var(--accent-light);font-family:'Manrope',sans-serif;">DataMobile · 1С:WMS / УТ</span></div>
+              <div class="visual-title">Операции склада в одном потоке</div>
+              <div class="visual-desc">От распоряжения на отгрузку в 1С до сканирования короба на пандусе.</div>
+              <div class="pipeline-diagram">
+                <div class="pipeline-node"><span>Приемка и проверка по ШК</span><span class="node-tag">ТСД</span></div>
+                <div class="pipeline-node"><span>Размещение по адресным ячейкам</span><span class="node-tag">Топология</span></div>
+                <div class="pipeline-node"><span>Волновой подбор и упаковка</span><span class="node-tag">0% пересорта</span></div>
+              </div>
+              <div class="live-log-container">
+                <div class="live-log-header"><span>Телеметрия склада</span><span class="live-log-pulse"></span></div>
+                <div class="live-log-feed"><div class="log-row"><span class="log-tag">WMS</span><span class="log-msg">ТСД DataMobile: заказ #1049 собран в ячейке A-08 за 4 мин 12 сек</span></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Таб 3: Маркировка -->
+          <div class="tab-pane" id="tab-mark" role="tabpanel">
+            <div class="tab-pane-content">
+              <h3>Маркировка «Честный Знак» и прослеживаемость</h3>
+              <p>Встраиваем обязательную маркировку в рабочие процессы 1С, производственных линий и касс. Настраиваем прямой обмен через True API и СУЗ, разрешительный режим (модуль ТС ПИоТ и локальный модуль ЛМ ЧЗ), агрегацию SSCC и ЭДО.</p>
+              <ul class="samsara-feature-list">
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Эмиссия и линии:</strong> заказ кодов в СУЗ, потоковая печать DataMatrix, машинзрение и отбраковка</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Кассы без сбоев (ТС ПИоТ и ЛМ ЧЗ):</strong> настройка разрешительного режима и офлайн-проверки кодов без ошибок 453/500</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Складская агрегация и ЭДО:</strong> коды коробов и паллет SSCC, поэкземплярная сверка УПД в Диадок / СБИС</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Смежные госсистемы:</strong> ВетИС «Меркурий» (автогашение эВСД), ЕГАИС и МДЛП внутри единой базы 1С</span></li>
+              </ul>
+              <a class="button button-small" href="markirovka.html">Решения по маркировке <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            </div>
+            <div class="tab-pane-visual">
+              <div class="visual-header"><span class="visual-badge"><span class="visual-status"></span> АРМ: ЧЕСТНЫЙ ЗНАК И ТС ПИоТ</span><span style="font-size:11px;color:var(--accent-light);font-family:'Manrope',sans-serif;">True API · СУЗ · ЛМ ЧЗ</span></div>
+              <div class="visual-title">Сквозной путь кода DataMatrix</div>
+              <div class="visual-desc">От эмиссии в СУЗ до кассовой проверки и передачи УПД по ЭДО.</div>
+              <div class="pipeline-diagram">
+                <div class="pipeline-node"><span>Заказ кодов и сериализация</span><span class="node-tag">СУЗ API</span></div>
+                <div class="pipeline-node"><span>Агрегация коробов и паллет</span><span class="node-tag">SSCC / ТСД</span></div>
+                <div class="pipeline-node"><span>Разрешительный режим и ЭДО</span><span class="node-tag">ТС ПИоТ / УПД</span></div>
+              </div>
+              <div class="live-log-container">
+                <div class="live-log-header"><span>Телеметрия ЦРПТ</span><span class="live-log-pulse"></span></div>
+                <div class="live-log-feed"><div class="log-row"><span class="log-tag">ЛМ ЧЗ</span><span class="log-msg">Разрешительный режим: проверка КМ выполнена успешно (0.03 сек)</span></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Таб 4: Маркетплейсы -->
+          <div class="tab-pane" id="tab-market" role="tabpanel">
+            <div class="tab-pane-content">
+              <h3>Маркетплейсы и потоварная юнит-экономика</h3>
+              <p>Связываем 1С напрямую по API с Ozon, Wildberries, Яндекс Маркетом и Авито. Остатки, цены, сборочные задания, этикетки и еженедельные финансовые отчеты комиссионеров обрабатываются внутри вашей 1С без сторонних абонентских сервисов.</p>
+              <ul class="samsara-feature-list">
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Ozon и Wildberries:</strong> схемы FBO / FBS / realFBS, мгновенный резерв остатков без оверсейлов и штрафов</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Яндекс Маркет и Авито:</strong> синхронизация FBY, FBS, Экспресс, DBS и автозагрузка объявлений</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Разбор финотчетов до SKU:</strong> автоматическое разнесение комиссий, логистики, хранения, штрафов и СПП по каждому артикулу</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Печать из 1С:</strong> формирование поставок, QR-коробов, стикеров заказов и передача кодов маркировки</span></li>
+              </ul>
+              <a class="button button-small" href="marketplaces.html">Интеграция с маркетплейсами <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            </div>
+            <div class="tab-pane-visual">
+              <div class="visual-header"><span class="visual-badge"><span class="visual-status"></span> АРМ: ТОРГОВЫЕ ПЛОЩАДКИ</span><span style="font-size:11px;color:var(--accent-light);font-family:'Manrope',sans-serif;">Ozon · WB · Яндекс · Авито</span></div>
+              <div class="visual-title">Заказ → сборка → чистая маржа</div>
+              <div class="visual-desc">Прямой обмен с маркетплейсами и прозрачная финансовая аналитика.</div>
+              <div class="pipeline-diagram">
+                <div class="pipeline-node"><span>Синхронизация остатков и цен</span><span class="node-tag">REST API</span></div>
+                <div class="pipeline-node"><span>Сборка FBS и печать этикеток</span><span class="node-tag">1С + ТСД</span></div>
+                <div class="pipeline-node"><span>Разбор отчета комиссионера</span><span class="node-tag">Юнит-экономика</span></div>
+              </div>
+              <div class="live-log-container">
+                <div class="live-log-header"><span>Телеметрия e-commerce</span><span class="live-log-pulse"></span></div>
+                <div class="live-log-feed"><div class="log-row"><span class="log-tag">WB / OZON</span><span class="log-msg">Финотчет загружен: удержания и логистика распределены по 412 SKU</span></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Таб 5: CRM -->
+          <div class="tab-pane" id="tab-crm" role="tabpanel">
+            <div class="tab-pane-content">
+              <h3>Битрикс24 и B2B-интеграции</h3>
+              <p>Выстраиваем работу отдела продаж и цифровые каналы взаимодействия с клиентами. Настраиваем CRM Битрикс24, двусторонний обмен с 1С в реальном времени и заказные API-интеграции для дилерских порталов.</p>
+              <ul class="samsara-feature-list">
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>CRM и воронки:</strong> лиды, сделки, автозадачи, IP-телефония, мессенджеры и регламенты менеджеров</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Двусторонняя связка с 1С:</strong> контрагенты, актуальные остатки, индивидуальные цены, резервы, счета и статусы оплат</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Контроль продаж:</strong> сквозная аналитика конверсии, контроль дебиторской задолженности и дашборды KPI</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>B2B-порталы:</strong> личные кабинеты оптовых клиентов и дилеров с прямым обменом через REST API</span></li>
+              </ul>
+              <a class="button button-small" href="bitrix24.html">Внедрение Битрикс24 <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            </div>
+            <div class="tab-pane-visual">
+              <div class="visual-header"><span class="visual-badge"><span class="visual-status"></span> АРМ: ПРОДАЖИ И КЛИЕНТЫ</span><span style="font-size:11px;color:var(--accent-light);font-family:'Manrope',sans-serif;">Битрикс24 · 1С · REST API</span></div>
+              <div class="visual-title">Единый клиентский процесс</div>
+              <div class="visual-desc">От первого обращения и КП до резерва на складе, оплаты и отгрузки.</div>
+              <div class="pipeline-diagram">
+                <div class="pipeline-node"><span>Обращение и сделка в воронке</span><span class="node-tag">Битрикс24</span></div>
+                <div class="pipeline-node"><span>Счет и товарный резерв</span><span class="node-tag">1С:УТ / ERP</span></div>
+                <div class="pipeline-node"><span>Оплата, УПД и статус отгрузки</span><span class="node-tag">Real-time</span></div>
+              </div>
+              <div class="live-log-container">
+                <div class="live-log-header"><span>Телеметрия CRM</span><span class="live-log-pulse"></span></div>
+                <div class="live-log-feed"><div class="log-row"><span class="log-tag">CRM ↔ 1С</span><span class="log-msg">Счет #894 оплачен в 1С → стадия сделки в Битрикс24: «В отгрузку»</span></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Таб 6: ИИ -->
+          <div class="tab-pane" id="tab-ai" role="tabpanel">
+            <div class="tab-pane-content">
+              <h3>ИИ и нейросети в контуре 1С</h3>
+              <p>Интегрируем языковые модели (LLM), корпоративные RAG-базы знаний и компьютерное зрение в 1С:ERP, КА и УТ: авторазбор первичных документов, умный поиск по регламентам и контроль финансовых аномалий.</p>
+              <ul class="samsara-feature-list">
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Авторазбор первички (OCR + LLM):</strong> распознавание сканов УПД и счетов с автосопоставлением номенклатуры 1С</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>RAG-ассистент:</strong> ответы на вопросы сотрудников по регламентам и базе 1С на естественном языке с учетом прав доступа</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Контроль себестоимости:</strong> автоматический поиск отклонений на 20/25/26 счетах и предиктивный прогноз запасов</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>On-Premise безопасность:</strong> развертывание локальных моделей без передачи коммерческих данных во внешние облака</span></li>
+              </ul>
+              <a class="button button-small" href="ai.html">Внедрение ИИ в 1С <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            </div>
+            <div class="tab-pane-visual">
+              <div class="visual-header"><span class="visual-badge"><span class="visual-status"></span> АРМ: КОРПОРАТИВНЫЙ ИИ</span><span style="font-size:11px;color:var(--accent-light);font-family:'Manrope',sans-serif;">LLM · RAG · On-Premise</span></div>
+              <div class="visual-title">ИИ внутри рабочего контура</div>
+              <div class="visual-desc">Интеллектуальный помощник и автопилот ввода документов в интерфейсе 1С.</div>
+              <div class="pipeline-diagram">
+                <div class="pipeline-node"><span>Сканы УПД и данные регистров</span><span class="node-tag">OCR / Извлечение</span></div>
+                <div class="pipeline-node"><span>Анализ и сопоставление НСИ</span><span class="node-tag">RAG / LLM</span></div>
+                <div class="pipeline-node"><span>Черновик документа в 1С</span><span class="node-tag">Ролевой доступ</span></div>
+              </div>
+              <div class="live-log-container">
+                <div class="live-log-header"><span>Телеметрия ИИ-модуля</span><span class="live-log-pulse"></span></div>
+                <div class="live-log-feed"><div class="log-row"><span class="log-tag">AI OCR</span><span class="log-msg">УПД №841 распознан за 1.2 сек: 14 из 14 позиций сопоставлены с НСИ</span></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Таб 7: Серверы -->
+          <div class="tab-pane" id="tab-infra" role="tabpanel">
+            <div class="tab-pane-content">
+              <h3>Серверы 1С и ускорение высоконагруженных баз</h3>
+              <p>Предоставляем отказоустойчивую инфраструктуру для 1С и PostgreSQL на базе промышленных NVMe-дисков в ЦОД Tier III (152-ФЗ), а также устраняем тормоза, ошибки ожидания блокировок и «распухание» баз свыше 50–100 ГБ.</p>
+              <ul class="samsara-feature-list">
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Аренда серверов 1С:</strong> высокочастотные процессоры до 4.5 ГГц и быстрые NVMe RAID-массивы под ERP, КА и УТ</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Устранение тормозов и блокировок:</strong> тюнинг PostgreSQL / MS SQL, оптимизация тяжелых запросов и регламентная свертка баз</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Защита от потерь:</strong> ежедневное геораспределенное резервное копирование и защита от шифровальщиков</span></li>
+                <li><svg aria-hidden="true"><use href="#icon-check"/></svg><span><strong>Миграция за ночь:</strong> бесшовный перенос рабочих баз без остановки утренних отгрузок, SLA доступности 99,98%</span></li>
+              </ul>
+              <a class="button button-small" href="servers.html">Аренда серверов и аудит СУБД <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            </div>
+            <div class="tab-pane-visual">
+              <div class="visual-header"><span class="visual-badge"><span class="visual-status"></span> ИНФРАСТРУКТУРА 1С</span><span style="font-size:11px;color:var(--accent-light);font-family:'Manrope',sans-serif;">NVMe · PostgreSQL · Tier III</span></div>
+              <div class="visual-title">Стабильная скорость при любой нагрузке</div>
+              <div class="visual-desc">Выделенные мощности и тонкая настройка СУБД под профиль предприятия.</div>
+              <div class="pipeline-diagram">
+                <div class="pipeline-node"><span>Аудит СУБД и снятие блокировок</span><span class="node-tag">Оптимизация</span></div>
+                <div class="pipeline-node"><span>Размещение на NVMe PCIe 4.0</span><span class="node-tag">Tier III РФ</span></div>
+                <div class="pipeline-node"><span>Изолированные бэкапы и мониторинг</span><span class="node-tag">SLA 99,98%</span></div>
+              </div>
+              <div class="live-log-container">
+                <div class="live-log-header"><span>Телеметрия кластера</span><span class="live-log-pulse"></span></div>
+                <div class="live-log-feed"><div class="log-row"><span class="log-tag">СУБД</span><span class="log-msg">PostgreSQL 1C: индекс APDEX 0.96, ожидания блокировок 0 [ОК]</span></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. БЛОК СВЯЗКА СОФТА И ФИЗИЧЕСКОГО МИРА -->
+    <section class="connected-section section reveal-block" id="connected" aria-labelledby="connected-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Единый контур операций</p>
+            <h2 id="connected-title">Связываем учет<br>с <span style="color: var(--accent-light);">физическим миром</span></h2>
+          </div>
+          <p class="section-intro" style="color: #94a3b8;">Мы автоматизируем не просто проводки в 1С, а связываем производственные линии, конвейеры, складских комплектовщиков, кассы и бухгалтерию в единую цепочку.</p>
+        </div>
+
+        <div class="connected-chain">
+          <div class="chain-card spotlight-card">
+            <span class="chain-num">Контур 01</span>
+            <h3>1С:ERP &amp; База данных</h3>
+            <p>Центр принятия решений: регламентированный и налоговый учет, планирование цехов, расчет полной себестоимости и финансовый результат.</p>
+          </div>
+          <div class="chain-arrow" aria-hidden="true"><svg><use href="#icon-exchange"/></svg></div>
+          <div class="chain-card spotlight-card">
+            <span class="chain-num">Контур 02</span>
+            <h3>Шина данных &amp; API</h3>
+            <p>Высокоскоростной транспорт: REST API микросервисы, интеграция с True API ЦРПТ, СУЗ, ЛМ ЧЗ, Диадок/СБИС и API маркетплейсов.</p>
+          </div>
+          <div class="chain-arrow" aria-hidden="true"><svg><use href="#icon-exchange"/></svg></div>
+          <div class="chain-card spotlight-card">
+            <span class="chain-num">Контур 03</span>
+            <h3>Физический контур</h3>
+            <p>Оборудование на объекте: терминалы сбора данных (ТСД DataMobile), промышленные принтеры-аппликаторы, кассы с ТС ПИоТ и 2D-сканеры.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Почему проектное внедрение с Нано Софт -->
+    <section class="why-us-section section reveal-block" id="why-us" aria-labelledby="why-us-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 02 / Преимущества подхода</p>
+            <h2 id="why-us-title">Почему компании выбирают Нано Софт<br><span class="muted">вместо потоковых франчайзи</span></h2>
+          </div>
+          <p class="section-intro">Большинство предприятий сталкивались с затянутыми внедрениями, где бюджеты раздуваются в разы, а задачи передаются стажерам. Наш инженерный подход устроен иначе.</p>
+        </div>
+
+        <div class="why-us-grid">
+          <article class="why-card spotlight-card">
+            <span class="why-card-num">01 / Без бюрократии</span>
+            <h3>Прямой контакт с ведущим архитектором</h3>
+            <p>Никаких испорченных телефонов из пяти уровней аккаунт-менеджеров. Вашим проектом руководит сертифицированный архитектор 1С с опытом реальных запусков на производстве и складах.</p>
+          </article>
+
+          <article class="why-card spotlight-card">
+            <span class="why-card-num">02 / Безопасность кода</span>
+            <h3>Без снятия базы с типовой поддержки</h3>
+            <p>Мы не ломаем ядро типовой конфигурации. Все доработки, алгоритмы расчета себестоимости и внешние интеграции выносятся в изолированные расширения (.cfe) и REST API. Обновления законодательства встают без конфликтов.</p>
+          </article>
+
+          <article class="why-card spotlight-card">
+            <span class="why-card-num">03 / Быстрые релизы</span>
+            <h3>Первый рабочий контур за 14–20 дней</h3>
+            <p>Не заставляем ждать результата годами. Запускаем приоритетный участок — адресный склад на ТСД, контур «Честного Знака» или обмен с CRM и маркетплейсами — уже в первые недели проекта.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. КЕЙСЫ И ЭФФЕКТИВНОСТЬ -->
+    <section class="cases section reveal-block" id="cases" aria-labelledby="cases-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 03 / Кейсы и эффективность</p>
+            <h2 id="cases-title">Измеримый результат<br><span class="muted">в реальных цифрах</span></h2>
+          </div>
+          <p class="section-intro">Результаты подтверждены промышленными запусками: ускорение отчетности, снижение ручных трудозатрат и сходимость складского учета.</p>
+        </div>
+
+        <div class="impact-ribbon" aria-label="Ключевые результаты проектов">
+          <div><strong>×10</strong><span>быстрее подготовка управленческой и производственной отчетности</span></div>
+          <div><strong>−30%</strong><span>снижение трудозатрат на ведение производственного учета</span></div>
+          <div><strong>0</strong><span>ошибок маркировки УПД в кейсе ООО «Фокси Эксперт»</span></div>
+          <div><strong>99,98%</strong><span>доступность серверной инфраструктуры в кейсе ООО «Стомдевайс»</span></div>
+        </div>
+
+        <details class="cases-details">
+          <summary>
+            <span class="cases-summary-title">Портфолио внедрений <b>10 кейсов</b></span>
+            <small>Реализованные проекты: производство, оптовая дистрибуция, маркировка, CRM и серверы (нажмите на карточку для просмотра архитектуры)</small>
+            <span class="cases-summary-action">Смотреть кейсы <svg aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+          </summary>
+
+          <div class="cases-showcase-wrapper">
+            <div class="cases-filter-pills" role="tablist" aria-label="Фильтры проектов">
+              <button type="button" class="case-filter-btn active" data-filter="all">Все проекты (10)</button>
+              <button type="button" class="case-filter-btn" data-filter="production">Производство и ERP/КА (2)</button>
+              <button type="button" class="case-filter-btn" data-filter="trade">Опт, ВЭД и дистрибуция (5)</button>
+              <button type="button" class="case-filter-btn" data-filter="crm">CRM, Розница и Серверы (3)</button>
+            </div>
+
+            <div class="cases-bento-grid cases-bento-compact">
+              <!-- Кейс 1: Спецнефтемаш -->
+              <article class="case-card case-card-featured spotlight-card" data-category="production">
+                <div class="case-card-header">
+                  <div class="case-client-badge">
+                    <span class="client-name">ООО НПО «СПЕЦНЕФТЕМАШ»</span>
+                    <span class="industry-tag">Нефтегазовое машиностроение и резервуары</span>
+                  </div>
+                  <span class="case-badge">1С:КА + Производство</span>
+                </div>
+                <div class="case-card-stats">
+                  <div class="c-stat">
+                    <span class="c-stat-num">×10</span>
+                    <span class="c-stat-lbl">быстрее подготовка отчетности</span>
+                  </div>
+                  <div class="c-stat">
+                    <span class="c-stat-num">−30%</span>
+                    <span class="c-stat-lbl">трудозатраты на учет</span>
+                  </div>
+                  <div class="c-stat">
+                    <span class="c-stat-num">100%</span>
+                    <span class="c-stat-lbl">прозрачный расчет себестоимости</span>
+                  </div>
+                </div>
+                <div class="case-card-content">
+                  <h3>Комплексная автоматизация производства нефтегазового оборудования</h3>
+                  <p>Перенос регламентированного учета, внедрение производственного контура и календаря цехов, бюджетирования и расчета зарплаты в единой базе 1С:КА.</p>
+                  <div class="tags">
+                    <span>1С:КА 2.5</span>
+                    <span>Производственный контур</span>
+                    <span>Себестоимость</span>
+                    <span>Бюджетирование и ЗП</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Кейс 2: Фокси эксперт -->
+              <article class="case-card spotlight-card" data-category="production">
+                <div class="case-card-header">
+                  <div class="case-client-badge">
+                    <span class="client-name">ООО «ФОКСИ ЭКСПЕРТ»</span>
+                    <span class="industry-tag">Производство парфюмерии и косметики</span>
+                  </div>
+                  <span class="case-badge">1С:ERP + Честный Знак</span>
+                </div>
+                <div class="case-card-stats">
+                  <div class="c-stat">
+                    <span class="c-stat-num">0</span>
+                    <span class="c-stat-lbl">ошибок маркировки УПД</span>
+                  </div>
+                  <div class="c-stat">
+                    <span class="c-stat-num">100%</span>
+                    <span class="c-stat-lbl">связка линий, ТСД и СУЗ</span>
+                  </div>
+                </div>
+                <div class="case-card-content">
+                  <h3>Автоматизация завода на базе 1С:ERP и маркировки</h3>
+                  <p>Интеграция 1С:ERP с «Честным Знаком» и СУЗ, подключение производственного оборудования, ТСД DataMobile, сервера печати этикеток и ЭДО.</p>
+                  <div class="tags">
+                    <span>1С:ERP</span>
+                    <span>Честный Знак &amp; СУЗ</span>
+                    <span>DataMobile ТСД</span>
+                    <span>ЭДО</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Кейс 3: Сода Стрим Сервис -->
+              <article class="case-card spotlight-card" data-category="trade">
+                <div class="case-card-header">
+                  <div class="case-client-badge">
+                    <span class="client-name">ООО «СОДА СТРИМ СЕРВИС»</span>
+                    <span class="industry-tag">Оптовая торговля напитками и молочной продукцией</span>
+                  </div>
+                  <span class="case-badge">Переход с 7.7 + Меркурий</span>
+                </div>
+                <div class="case-card-stats">
+                  <div class="c-stat">
+                    <span class="c-stat-num">7.7 → 11.5</span>
+                    <span class="c-stat-lbl">миграция на новый сервер</span>
+                  </div>
+                  <div class="c-stat">
+                    <span class="c-stat-num">100%</span>
+                    <span class="c-stat-lbl">обмен ВетИС, ЧЗ и Мобиком</span>
+                  </div>
+                </div>
+                <div class="case-card-content">
+                  <h3>Масштабный переход с 1С 7.7 на 1С:УТ 11.5</h3>
+                  <p>Перенос баз на новый сервер, интеграция с ВетИС «Меркурий» и «Честным Знаком», обмен с приложением торговых представителей «Мобиком» и ТСД.</p>
+                  <div class="tags">
+                    <span>1С:УТ 11.5</span>
+                    <span>ВетИС Меркурий</span>
+                    <span>Честный Знак</span>
+                    <span>Мобиком &amp; ТСД</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Кейс 4: ТК Гранд -->
+              <article class="case-card spotlight-card" data-category="trade">
+                <div class="case-card-header">
+                  <div class="case-client-badge">
+                    <span class="client-name">ООО ТК «ГРАНД»</span>
+                    <span class="industry-tag">Поставка смазочных материалов и сервис</span>
+                  </div>
+                  <span class="case-badge">1С:УТ 11.5 + Маркетплейсы</span>
+                </div>
+                <div class="case-card-stats">
+                  <div class="c-stat">
+                    <span class="c-stat-num">24/7</span>
+                    <span class="c-stat-lbl">двусторонний обмен Ozon / WB</span>
+                  </div>
+                  <div class="c-stat">
+                    <span class="c-stat-num">Единая</span>
+                    <span class="c-stat-lbl">база всех каналов продаж</span>
+                  </div>
+                </div>
+                <div class="case-card-content">
+                  <h3>Многоканальные продажи и миграция в 1С:УТ 11.5</h3>
+                  <p>Перенос данных и адаптация доработок под 1С:УТ 11.5, интеграция с корпоративными сайтами и автоматизация двустороннего обмена с Ozon и Wildberries.</p>
+                  <div class="tags">
+                    <span>1С:УТ 11.5</span>
+                    <span>Ozon &amp; Wildberries</span>
+                    <span>Интеграция сайтов</span>
+                    <span>ИТС</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Кейс 5: Стомдевайс -->
+              <article class="case-card spotlight-card" data-category="crm">
+                <div class="case-card-header">
+                  <div class="case-client-badge">
+                    <span class="client-name">ООО «СТОМДЕВАЙС»</span>
+                    <span class="industry-tag">Стоматологическое оборудование</span>
+                  </div>
+                  <span class="case-badge">Сервер + УТ 11.5 + CRM</span>
+                </div>
+                <div class="case-card-stats">
+                  <div class="c-stat">
+                    <span class="c-stat-num">99,98%</span>
+                    <span class="c-stat-lbl">стабильность на новом сервере</span>
+                  </div>
+                  <div class="c-stat">
+                    <span class="c-stat-num">3 контура</span>
+                    <span class="c-stat-lbl">Сайт ↔ Битрикс24 ↔ 1С</span>
+                  </div>
+                </div>
+                <div class="case-card-content">
+                  <h3>Переход на 1С:УТ 11.5 и модернизация инфраструктуры</h3>
+                  <p>Аудит учета, перенос ИТ-инфраструктуры на выделенный сервер, сохранение кастомных доработок при переходе на УТ 11.5 и связка с сайтом и Битрикс24.</p>
+                  <div class="tags">
+                    <span>1С:УТ 11.5</span>
+                    <span>Выделенный сервер</span>
+                    <span>Битрикс24</span>
+                    <span>Торговое оборудование</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Кейс 6: МОТАХ -->
+              <article class="case-card spotlight-card" data-category="trade">
+                <div class="case-card-header">
+                  <div class="case-client-badge">
+                    <span class="client-name">«МОТАХ»</span>
+                    <span class="industry-tag">Опт и розница: мототехника и комплектующие</span>
+                  </div>
+                  <span class="case-badge">1С:УТ 11.5 + ТСД + CRM</span>
+                </div>
+                <div class="case-card-stats">
+                  <div class="c-stat">
+                    <span class="c-stat-num">×2,5</span>
+                    <span class="c-stat-lbl">ускорение сборки заказов на ТСД</span>
+                  </div>
+                  <div class="c-stat">
+                    <span class="c-stat-num">100%</span>
+                    <span class="c-stat-lbl">контроль остатков и аналитики</span>
+                  </div>
+                </div>
+                <div class="case-card-content">
+                  <h3>Автоматизация торговли и склада мототехники</h3>
+                  <p>Трехсторонняя интеграция Битрикс24, сайта и 1С:УТ 11.5. Внедрение терминалов сбора данных (ТСД) на складе и разработка управленческих отчетов.</p>
+                  <div class="tags">
+                    <span>1С:УТ 11.5</span>
+                    <span>Склад ТСД</span>
+                    <span>Битрикс24 &amp; Сайт</span>
+                    <span>BI-аналитика</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Кейс 7: Металлобаза Волхонка -->
+              <article class="case-card spotlight-card" data-category="crm">
+                <div class="case-card-header">
+                  <div class="case-client-badge">
+                    <span class="client-name">ООО «МЕТАЛЛОБАЗА ВОЛХОНКА»</span>
+                    <span class="industry-tag">Оптово-розничная продажа металлопроката</span>
+                  </div>
+                  <span class="case-badge">1С:УТ 11.5 + БП 3.0 + CRM</span>
+                </div>
+                <div class="case-card-stats">
+                  <div class="c-stat">
+                    <span class="c-stat-num">2 базы</span>
+                    <span class="c-stat-lbl">синхронизация УТ 11.5 и БП 3.0</span>
+                  </div>
+                  <div class="c-stat">
+                    <span class="c-stat-num">Online</span>
+                    <span class="c-stat-lbl">двусторонний обмен с Битрикс24</span>
+                  </div>
+                </div>
+                <div class="case-card-content">
+                  <h3>Управленческий учет металлопроката и связка с CRM</h3>
+                  <p>Перенос данных и запуск 1С:УТ 11.5, настройка обмена с 1С:Бухгалтерией 3.0 и двусторонняя синхронизация сделок и счетов с CRM Битрикс24.</p>
+                  <div class="tags">
+                    <span>1С:УТ 11.5</span>
+                    <span>1С:Бухгалтерия 3.0</span>
+                    <span>Битрикс24</span>
+                    <span>Управленческий учет</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Кейс 8: ООО «ВЭЙФС» -->
+              <article class="case-card spotlight-card" data-category="trade">
+                <div class="case-card-header">
+                  <div class="case-client-badge">
+                    <span class="client-name">ООО «ВЭЙФС» (WAFE STORE)</span>
+                    <span class="industry-tag">Импорт и продажа бытовой техники</span>
+                  </div>
+                  <span class="case-badge">Из БП 3.0 → в 1С:УТ 11.5</span>
+                </div>
+                <div class="case-card-stats">
+                  <div class="c-stat">
+                    <span class="c-stat-num">Авто</span>
+                    <span class="c-stat-lbl">контроль клиентских резервов</span>
+                  </div>
+                  <div class="c-stat">
+                    <span class="c-stat-num">.CFE</span>
+                    <span class="c-stat-lbl">возврат на типовую поддержку</span>
+                  </div>
+                </div>
+                <div class="case-card-content">
+                  <h3>Перевод управленческого учета из Бухгалтерии в 1С:УТ 11.5</h3>
+                  <p>Вынос оперативного контура и резервирования товаров в 1С:УТ 11.5, настройка обмена с 1С:БП 3.0 и Битрикс24, приведение базы к обновляемому состоянию.</p>
+                  <div class="tags">
+                    <span>1С:УТ 11.5</span>
+                    <span>1С:БП 3.0</span>
+                    <span>Товарные резервы</span>
+                    <span>Битрикс24</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Кейс 9: ООО «ТиГео» -->
+              <article class="case-card spotlight-card" data-category="trade">
+                <div class="case-card-header">
+                  <div class="case-client-badge">
+                    <span class="client-name">ООО «ТИГЕО»</span>
+                    <span class="industry-tag">Продажа и аренда геодезического оборудования</span>
+                  </div>
+                  <span class="case-badge">1С:УТ 11.5 + Контур аренды</span>
+                </div>
+                <div class="case-card-stats">
+                  <div class="c-stat">
+                    <span class="c-stat-num">S/N</span>
+                    <span class="c-stat-lbl">серийный учет каждого прибора</span>
+                  </div>
+                  <div class="c-stat">
+                    <span class="c-stat-num">2 в 1</span>
+                    <span class="c-stat-lbl">оптовые продажи + биллинг аренды</span>
+                  </div>
+                </div>
+                <div class="case-card-content">
+                  <h3>Автоматизация продаж и проката геодезических приборов</h3>
+                  <p>Внедрение 1С:УТ 11.5 с доработкой блока аренды оборудования, настройка поштучного серийного учета движения приборов и подготовка НСИ к обмену с сайтом.</p>
+                  <div class="tags">
+                    <span>1С:УТ 11.5</span>
+                    <span>Учет аренды</span>
+                    <span>Серийные номера</span>
+                    <span>Обучение штата</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Кейс 10: ИП Пестряков А. В. -->
+              <article class="case-card spotlight-card" data-category="crm">
+                <div class="case-card-header">
+                  <div class="case-client-badge">
+                    <span class="client-name">ИП ПЕСТРЯКОВ А. В.</span>
+                    <span class="industry-tag">Розница: электротехника и инструмент</span>
+                  </div>
+                  <span class="case-badge">1С:УТ для Казахстана ред. 3</span>
+                </div>
+                <div class="case-card-stats">
+                  <div class="c-stat">
+                    <span class="c-stat-num">+40%</span>
+                    <span class="c-stat-lbl">скорость обслуживания на РМК</span>
+                  </div>
+                  <div class="c-stat">
+                    <span class="c-stat-num">Бонусы</span>
+                    <span class="c-stat-lbl">система лояльности и опт</span>
+                  </div>
+                </div>
+                <div class="case-card-content">
+                  <h3>Автоматизация розничной сети и кассовой зоны</h3>
+                  <p>Аудит и исправление ошибок учета в «1С:УТ для Казахстана, ред. 3», автоматизация закупок, внедрение бонусной программы лояльности и оптимизация РМК кассира.</p>
+                  <div class="tags">
+                    <span>1С:УТ КЗ 3.0</span>
+                    <span>РМК Кассира</span>
+                    <span>Система лояльности</span>
+                    <span>Закупки и склад</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 5. ОТРАСЛЕВОЙ АККОРДЕОН -->
+    <section class="industries-section section reveal-block" id="industries" aria-labelledby="industries-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 04 / Отраслевая экспертиза</p>
+            <h2 id="industries-title">Решения под отраслевые<br><span class="muted">регламенты и специфику</span></h2>
+          </div>
+          <p class="section-intro">Учитываем требования ГОСТ, правила обязательной маркировки и отраслевого учета, закладывая проверенные алгоритмы в архитектуру проекта.</p>
+        </div>
+
+        <div class="ind-accordion">
+          <details class="ind-item" name="industry" open>
+            <summary><span class="ind-num">01</span><span class="ind-title">Машиностроение &amp; Металлообработка</span><span class="ind-plus" aria-hidden="true"></span></summary>
+            <div class="ind-body"><p>Учет многопередельных спецификаций, раскрой и контроль металлопроката, прослеживаемость серийных номеров узлов, сдельная оплата цеховых рабочих и раздельный учет ГОЗ.</p><div class="tags"><span>ГОСТ</span><span>1С:ERP / КА 2.5</span><span>Многопередельные спецификации</span></div></div>
+          </details>
+          <details class="ind-item" name="industry">
+            <summary><span class="ind-num">02</span><span class="ind-title">Химия &amp; Полимерные материалы</span><span class="ind-plus" aria-hidden="true"></span></summary>
+            <div class="ind-body"><p>Партионный учет сырья, красителей и добавок, калькуляция рецептур, учет возвратных отходов и точное распределение производственных затрат по счетам 20/25/26.</p><div class="tags"><span>Рецептуры</span><span>1С:КА 2.5</span><span>20/25/26 счета</span></div></div>
+          </details>
+          <details class="ind-item" name="industry">
+            <summary><span class="ind-num">03</span><span class="ind-title">Парфюмерия, Косметика &amp; Бытовая химия</span><span class="ind-plus" aria-hidden="true"></span></summary>
+            <div class="ind-body"><p>Потоковая маркировка «Честный Знак» на линиях, прямая интеграция СУЗ, агрегация коробов на ТСД DataMobile, этикетирование и отгрузки на склады Wildberries и Ozon.</p><div class="tags"><span>Честный Знак</span><span>DataMobile</span><span>СУЗ API</span></div></div>
+          </details>
+          <details class="ind-item" name="industry">
+            <summary><span class="ind-num">04</span><span class="ind-title">Оптовая торговля, ВЭД &amp; Дистрибуция</span><span class="ind-plus" aria-hidden="true"></span></summary>
+            <div class="ind-body"><p>Ячеистые адресные склады, учет ГТД и импортных пошлин, разрешительный режим на кассах (ТС ПИоТ и ЛМ ЧЗ), интеграция интернет-магазинов и Битрикс24.</p><div class="tags"><span>1С:УТ 11.5</span><span>Битрикс24</span><span>WMS и ТС ПИоТ</span></div></div>
+          </details>
+          <details class="ind-item" name="industry">
+            <summary><span class="ind-num">05</span><span class="ind-title">Пищевое производство, Кондитерские изделия &amp; Напитки</span><span class="ind-plus" aria-hidden="true"></span></summary>
+            <div class="ind-body"><p>Сквозная прослеживаемость партий сырья и сроков годности (FEFO), автоматическое оформление и гашение эВСД в ВетИС «Меркурий», маркировка сладостей, воды и напитков, ЕГАИС.</p><div class="tags"><span>ВетИС Меркурий</span><span>эВСД</span><span>Честный Знак &amp; ЕГАИС</span></div></div>
+          </details>
+          <details class="ind-item" name="industry">
+            <summary><span class="ind-num">06</span><span class="ind-title">Медицинские центры, Стоматология &amp; Лаборатории</span><span class="ind-plus" aria-hidden="true"></span></summary>
+            <div class="ind-body"><p>Автоматизация клиник, дистрибьюторов медоборудования и лабораторных сетей: штрихкодирование биоматериала, учет медицинских изделий, БАДов и препаратов (МДЛП / Честный Знак), аналитика приемов.</p><div class="tags"><span>1С:Медицина</span><span>МДЛП Честный Знак</span><span>Учет реагентов и медизделий</span></div></div>
+          </details>
+          <details class="ind-item" name="industry">
+            <summary><span class="ind-num">07</span><span class="ind-title">Логистические компании &amp; 3PL-операторы</span><span class="ind-plus" aria-hidden="true"></span></summary>
+            <div class="ind-body"><p>Управление мультимодальными перевозками, маршрутизацией и автопарком (TMS + WMS). Контроль ГСМ, путевых листов, весогабаритных характеристик (ВГХ), расчет маржинальности каждого рейса и биллинг ответственного хранения.</p><div class="tags"><span>1С:TMS Логистика</span><span>1С:WMS</span><span>3PL-биллинг</span><span>Контроль автопарка</span></div></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ПЛАШКА ДОВЕРИЯ И БЕГУЩАЯ СТРОКА КЛИЕНТОВ -->
+    <section class="clients-section section reveal-block" id="clients" aria-labelledby="clients-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 05 / Клиенты и масштаб</p>
+            <h2 id="clients-title">Компании, которые<br><span class="muted">доверяют нам</span></h2>
+          </div>
+          <p class="section-intro">Автоматизируем как растущие торговые и производственные компании, так и крупные предприятия с территориально распределенной структурой.</p>
+        </div>
+
+        <div class="trust-banner">
+          <div class="trust-banner-text">
+            <strong>Инженерные решения для лидеров своих отраслей</strong>
+            <p>Реализуем проекты с полной ответственностью за сходимость учета, бесперебойную работу склада и соблюдение сроков.</p>
+          </div>
+          <div class="trust-banner-stat">
+            <div class="stat-pill">
+              <strong>50+</strong>
+              <span>Успешных проектов</span>
+            </div>
+            <div class="stat-pill">
+              <strong>12 мес.</strong>
+              <span>Гарантии по договору</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clients-ticker" aria-label="Наши клиенты">
+        <div class="clients-track">
+          <div class="clients-set"><img src="assets/logos/spetsneftemash.png" alt="Спецнефтемаш" style="height:66px"><img src="assets/logos/stomdevice.png" alt="Стомдевайс" style="height:55px"><img src="assets/logos/motax.png" alt="МОТАХ" style="height:58px"><img src="assets/logos/sodastream.png" alt="Сода Стрим Сервис" style="height:38px"><img src="assets/logos/foxy.png" alt="Фокси Эксперт" style="height:42px"><img src="assets/logos/grand.png" alt="ТК Гранд" style="height:55px"><img src="assets/logos/metallobaza.png" alt="Металлобаза Волхонка" style="height:58px"><img src="assets/logos/wafe.png" alt="WAFE Store" style="height:38px"><img src="assets/logos/polymax.png" alt="Полимакс" style="height:44px"><img src="assets/logos/invitro.png" alt="Инвитро" style="height:46px"></div>
+          <div class="clients-set" aria-hidden="true"><img src="assets/logos/spetsneftemash.png" alt="Спецнефтемаш" style="height:66px"><img src="assets/logos/stomdevice.png" alt="Стомдевайс" style="height:55px"><img src="assets/logos/motax.png" alt="МОТАХ" style="height:58px"><img src="assets/logos/sodastream.png" alt="Сода Стрим Сервис" style="height:38px"><img src="assets/logos/foxy.png" alt="Фокси Эксперт" style="height:42px"><img src="assets/logos/grand.png" alt="ТК Гранд" style="height:55px"><img src="assets/logos/metallobaza.png" alt="Металлобаза Волхонка" style="height:58px"><img src="assets/logos/wafe.png" alt="WAFE Store" style="height:38px"><img src="assets/logos/polymax.png" alt="Полимакс" style="height:44px"><img src="assets/logos/invitro.png" alt="Инвитро" style="height:46px"></div>
+          <div class="clients-set" aria-hidden="true"><img src="assets/logos/spetsneftemash.png" alt="Спецнефтемаш" style="height:66px"><img src="assets/logos/stomdevice.png" alt="Стомдевайс" style="height:55px"><img src="assets/logos/motax.png" alt="МОТАХ" style="height:58px"><img src="assets/logos/sodastream.png" alt="Сода Стрим Сервис" style="height:38px"><img src="assets/logos/foxy.png" alt="Фокси Эксперт" style="height:42px"><img src="assets/logos/grand.png" alt="ТК Гранд" style="height:55px"><img src="assets/logos/metallobaza.png" alt="Металлобаза Волхонка" style="height:58px"><img src="assets/logos/wafe.png" alt="WAFE Store" style="height:38px"><img src="assets/logos/polymax.png" alt="Полимакс" style="height:44px"><img src="assets/logos/invitro.png" alt="Инвитро" style="height:46px"></div>
+          <div class="clients-set" aria-hidden="true"><img src="assets/logos/spetsneftemash.png" alt="Спецнефтемаш" style="height:66px"><img src="assets/logos/stomdevice.png" alt="Стомдевайс" style="height:55px"><img src="assets/logos/motax.png" alt="МОТАХ" style="height:58px"><img src="assets/logos/sodastream.png" alt="Сода Стрим Сервис" style="height:38px"><img src="assets/logos/foxy.png" alt="Фокси Эксперт" style="height:42px"><img src="assets/logos/grand.png" alt="ТК Гранд" style="height:55px"><img src="assets/logos/metallobaza.png" alt="Металлобаза Волхонка" style="height:58px"><img src="assets/logos/wafe.png" alt="WAFE Store" style="height:38px"><img src="assets/logos/polymax.png" alt="Полимакс" style="height:44px"><img src="assets/logos/invitro.png" alt="Инвитро" style="height:46px"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Методология внедрения (5 этапов) -->
+    <section class="workflow section reveal-block" id="workflow" aria-labelledby="workflow-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> 06 / Методология</p>
+            <h2 id="workflow-title">Прозрачный процесс<br><span class="muted">от ТЗ до промышленного пуска</span></h2>
+          </div>
+          <p class="section-intro">Работаем по стандартам ГОСТ: фиксированные контрольные точки, демонстрация каждого этапа и документальное сопровождение.</p>
+        </div>
+        <ol class="timeline">
+          <li><span class="timeline-step">01</span><h3>Экспресс-аудит и ТЗ</h3><p>Фиксация бизнес-процессов as-is, выявление узких мест и формирование проектного ТЗ по ГОСТ.</p></li>
+          <li><span class="timeline-step">02</span><h3>Моделирование</h3><p>Сборка контрольного примера на реальных данных вашей компании в типовом функционале 1С до написания доработок.</p></li>
+          <li><span class="timeline-step">03</span><h3>Разработка и интеграция</h3><p>Создание расширений (.cfe), подключение ТСД, касс, сканеров, интеграция с «Честным Знаком» и внешними API.</p></li>
+          <li><span class="timeline-step">04</span><h3>Запуск и обучение</h3><p>Бесшовный перенос остатков за выходные, опытная эксплуатация и очное/онлайн-обучение персонала по ролям.</p></li>
+          <li><span class="timeline-step">05</span><h3>Поддержка по SLA</h3><p>Инженерное сопровождение после запуска, помощь в закрытии первых периодов и своевременные обновления.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 8. Блок гарантий безопасности и SLA -->
+    <section class="section reveal-block" style="background: var(--surface);" id="guarantees" aria-labelledby="guarantees-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 07 / Гарантии, NDA и SLA</p>
+            <h2 id="guarantees-title">Безопасность данных<br><span class="muted">и договорная ответственность</span></h2>
+          </div>
+          <p class="section-intro">Защищаем коммерческую тайну заказчика, фиксируем бюджет этапов и отвечаем за результат по договору.</p>
+        </div>
+
+        <div class="sla-grid">
+          <div class="sla-card spotlight-card">
+            <div class="sla-icon"><svg><use href="#icon-check"/></svg></div>
+            <div class="sla-text">
+              <h4>Защита коммерческой тайны (NDA)</h4>
+              <p>Подписываем соглашение о неразглашении (NDA) до первого технического созвона и предоставления доступа к вашим базам 1С.</p>
+            </div>
+          </div>
+
+          <div class="sla-card spotlight-card">
+            <div class="sla-icon"><svg><use href="#icon-check"/></svg></div>
+            <div class="sla-text">
+              <h4>Фиксированная смета этапов и гарантия 12 мес.</h4>
+              <p>Фиксируем стоимость и сроки каждого этапа в договоре после обследования. На все разработанные модули действует гарантия 12 месяцев.</p>
+            </div>
+          </div>
+
+          <div class="sla-card spotlight-card">
+            <div class="sla-icon"><svg><use href="#icon-check"/></svg></div>
+            <div class="sla-text">
+              <h4>Приоритетная поддержка по SLA</h4>
+              <p>Регламентированное время реакции инженеров от 15 минут по критическим инцидентам, прямой доступ к системе трекинга задач.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. ИНТЕРАКТИВНЫЙ КАЛЬКУЛЯТОР-КВИЗ -->
+    <section class="calculator-section section reveal-block" id="calculator" aria-labelledby="calc-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 08 / Экспресс-расчет</p>
+            <h2 id="calc-title">Интерактивный расчет<br><span class="muted">сроков и стека внедрения</span></h2>
+          </div>
+          <p class="section-intro">Выберите параметры вашего предприятия, чтобы мгновенно получить предварительную архитектуру системы и оценку запуска первого релиза.</p>
+        </div>
+
+        <div class="calc-wrapper">
+          <div class="calc-steps">
+            <!-- Шаг 1 -->
+            <div class="calc-step-group">
+              <h4><span class="step-circle">1</span> Масштаб компании и рабочих мест</h4>
+              <div class="calc-options-grid">
+                <label class="calc-option">
+                  <input type="radio" name="calc_scale" value="small">
+                  <span class="calc-option-title">До 15 АРМ</span>
+                  <span class="calc-option-sub">Небольшое производство / оптовый склад</span>
+                </label>
+                <label class="calc-option selected">
+                  <input type="radio" name="calc_scale" value="mid" checked>
+                  <span class="calc-option-title">15–60 АРМ</span>
+                  <span class="calc-option-sub">Завод, сеть складов, развивающийся бизнес</span>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="calc_scale" value="large">
+                  <span class="calc-option-title">60+ АРМ</span>
+                  <span class="calc-option-sub">Холдинг, многопередельное производство</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Шаг 2 -->
+            <div class="calc-step-group">
+              <h4><span class="step-circle">2</span> Ключевой приоритет автоматизации</h4>
+              <div class="calc-options-grid">
+                <label class="calc-option selected">
+                  <input type="radio" name="calc_contour" value="erp" checked>
+                  <span class="calc-option-title">Производство &amp; ERP / КА</span>
+                  <span class="calc-option-sub">Переход с УПП, себестоимость, 20/25/26 счета</span>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="calc_contour" value="wms">
+                  <span class="calc-option-title">Склад WMS &amp; ТСД</span>
+                  <span class="calc-option-sub">Ячейки, сборка без пересорта, DataMobile</span>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="calc_contour" value="mark">
+                  <span class="calc-option-title">Честный Знак &amp; ТС ПИоТ</span>
+                  <span class="calc-option-sub">True API, СУЗ, ЛМ ЧЗ, печать и ЭДО</span>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="calc_contour" value="market">
+                  <span class="calc-option-title">Маркетплейсы и торговля</span>
+                  <span class="calc-option-sub">Ozon, WB, Яндекс, разбор финотчетов до SKU</span>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="calc_contour" value="crm">
+                  <span class="calc-option-title">CRM и B2B-порталы</span>
+                  <span class="calc-option-sub">Битрикс24, воронки, двусторонний обмен с 1С</span>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="calc_contour" value="ai">
+                  <span class="calc-option-title">ИИ и автоматизация</span>
+                  <span class="calc-option-sub">Распознавание УПД, RAG-ассистенты в 1С</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Шаг 3 -->
+            <div class="calc-step-group">
+              <h4><span class="step-circle">3</span> Размещение инфраструктуры</h4>
+              <div class="calc-options-grid">
+                <label class="calc-option selected">
+                  <input type="radio" name="calc_hosting" value="cloud" checked>
+                  <span class="calc-option-title">Облако 1С Tier III</span>
+                  <span class="calc-option-sub">NVMe-сервер по 152-ФЗ с ежедневными бэкапами</span>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="calc_hosting" value="onpremise">
+                  <span class="calc-option-title">Собственный сервер</span>
+                  <span class="calc-option-sub">Развертывание и тюнинг СУБД заказчика</span>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="calc_hosting" value="hybrid">
+                  <span class="calc-option-title">Гибридная модель</span>
+                  <span class="calc-option-sub">Резервирование и репликация баз данных</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Шаг 4 -->
+            <div class="calc-step-group">
+              <h4><span class="step-circle">4</span> Что еще входит в проект <em class="calc-hint">можно выбрать несколько</em></h4>
+              <div class="calc-options-grid">
+                <label class="calc-option calc-option-multi">
+                  <input type="checkbox" name="calc_extra" value="integr">
+                  <span class="calc-option-title">Интеграции</span>
+                  <span class="calc-option-sub">Сайт, Битрикс24, маркетплейсы, клиент-банк</span>
+                </label>
+                <label class="calc-option calc-option-multi">
+                  <input type="checkbox" name="calc_extra" value="migr">
+                  <span class="calc-option-title">Перенос данных</span>
+                  <span class="calc-option-sub">С 1С:УПП, 7.7 или Excel, очистка НСИ от дублей</span>
+                </label>
+                <label class="calc-option calc-option-multi">
+                  <input type="checkbox" name="calc_extra" value="train">
+                  <span class="calc-option-title">Обучение</span>
+                  <span class="calc-option-sub">Ролевые инструкции и обучение персонала</span>
+                </label>
+                <label class="calc-option calc-option-multi">
+                  <input type="checkbox" name="calc_extra" value="audit">
+                  <span class="calc-option-title">Обследование и моделирование</span>
+                  <span class="calc-option-sub">Аудит процессов, карта перехода и ТЗ по ГОСТ</span>
+                </label>
+                <label class="calc-option calc-option-multi">
+                  <input type="checkbox" name="calc_extra" value="custom">
+                  <span class="calc-option-title">Доработки (.cfe) и API</span>
+                  <span class="calc-option-sub">Нестандартная логика без снятия с поддержки</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Сводная правая колонка -->
+          <div class="calc-summary-panel">
+            <div>
+              <div class="calc-summary-head">
+                <span>Предварительная архитектура</span>
+              </div>
+
+              <div class="calc-metric-row">
+                <span>Решение:</span>
+                <span class="metric-val" id="calc-res-system">1С:КА 2.5 + Производство [Облако Tier III]</span>
+              </div>
+              <div class="calc-metric-row">
+                <span>Первый релиз:</span>
+                <span class="metric-val" id="calc-res-days">20–30 дней</span>
+              </div>
+              <div class="calc-metric-row">
+                <span>Ориентир бюджета:</span>
+                <span class="metric-val" id="calc-res-budget">от 260 000 ₽</span>
+              </div>
+              <div class="calc-metric-row">
+                <span>Инфраструктура:</span>
+                <span class="metric-val" id="calc-res-hosting">от 12 500 ₽ / мес</span>
+              </div>
+
+              <div class="calc-metric-highlight">
+                <div class="label">Следующий шаг</div>
+                <div class="val">Экспресс-аудит и дорожная карта</div>
+              </div>
+            </div>
+
+            <p class="calc-note">Расчет является предварительным ориентиром и не является публичной офертой. Лицензии 1С и торговое оборудование рассчитываются отдельно по прайсу вендоров. Точная смета фиксируется после экспресс-обследования.</p>
+            <a class="button button-bright" style="width: 100%;" href="#contacts">Обсудить этот расчет <svg><use href="#icon-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Контакты и форма заявки -->
+    <section class="contact-section section reveal-block" id="contacts" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-heading contact-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 09 / Старт проекта</p>
+            <h2 id="contact-title">Обсудить автоматизацию<br><span class="muted">вашего предприятия</span></h2>
+          </div>
+          <p class="section-intro">Опишите задачу и текущие учетные системы. Ведущий архитектор Нано Софт свяжется с вами, чтобы предложить архитектуру решения и план работ.</p>
+        </div>
+        <div class="contact-layout">
+          <form class="contact-form" id="consultation-form">
+            <div class="form-grid">
+              <label>Ваше имя <input name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required></label>
+              <label>Компания <input name="company" type="text" autocomplete="organization" placeholder="Название компании"></label>
+            </div>
+            <div class="form-grid">
+              <label>Телефон, Telegram или email <input name="contact" type="text" autocomplete="email" placeholder="+7 900 000-00-00 или @username" required></label>
+              <label>Направление
+                <select name="service" required>
+                  <option value="" disabled selected>Выберите направление</option>
+                  <option>Внедрение 1С:ERP / КА 2.5 или переход с УПП / 7.7</option>
+                  <option>Складской контур, WMS и ТСД DataMobile</option>
+                  <option>Маркировка Честный Знак, ТС ПИоТ, ЛМ ЧЗ и Меркурий</option>
+                  <option>Интеграция с маркетплейсами и Битрикс24</option>
+                  <option>Внедрение ИИ-модулей (OCR первички, RAG) в 1С</option>
+                  <option>Аренда сервера 1С / Ускорение и аудит базы СУБД</option>
+                  <option>Сопровождение и SLA-поддержка</option>
+                </select>
+              </label>
+            </div>
+            
+            <label class="file-upload-label">
+              <div class="file-upload-icon"><svg><use href="#icon-up"/></svg></div>
+              <div class="file-upload-text">
+                <strong>Прикрепить ТЗ или описание задачи</strong>
+                <span>PDF, DOCX или ZIP до 10 МБ</span>
+              </div>
+              <input type="file" name="attachment" id="task-file-input">
+            </label>
+            <label>О задаче <textarea name="task" rows="4" id="calc-task-input" placeholder="Какая учетная система используется сейчас, сколько рабочих мест, какие ключевые задачи нужно решить в первую очередь?"></textarea></label>
+
+            <label class="consent"><input type="checkbox" name="privacy_consent" value="1" required><span>Согласен на обработку персональных данных для ответа на обращение и подготовки коммерческого предложения.</span></label>
+            <div class="form-bottom">
+              <button class="button" type="submit" id="submit-btn">Получить архитектуру и оценку проекта <svg aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+              <p id="form-message" role="status" class="form-status-msg"></p>
+            </div>
+          </form>
+          <aside class="contact-aside">
+            <p class="aside-label">Быстрая связь с архитектором</p>
+            <a class="contact-large" href="tel:+78124071767">+7 (812) 407-17-67</a>
+            <div class="aside-links">
+              <a class="contact-tg-btn" href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="#icon-tg"/></svg>
+                <span>Написать в Telegram</span>
+              </a>
+              <a class="contact-email" href="mailto:info@nanosoft-team.ru">info@nanosoft-team.ru <svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+            </div>
+            <div class="aside-divider"></div>
+            <p class="aside-label">География и центр разработки</p>
+            <address>Работаем с предприятиями по всей РФ и СНГ.<br>Инженерный центр: г. Вологда, ул. Октябрьская, д. 27</address>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top"><span class="brand-icon"><img src="https://nanosoft.team/favicon.ico" alt="" width="30" height="30"></span><span class="brand-name">НАНО<span>СОФТ</span></span></a>
+        <p>Комплексная автоматизация производства, складов, маркировки и учета на базе 1С:ERP, 1С:КА и микросервисов.</p>
+      </div>
+      <div>
+        <h3>Навигация</h3>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О компании и сертификаты</a>
+        <a href="vnedrenie-1c.html">Внедрение 1С и переходы</a>
+        <a href="ai.html">Внедрение ИИ в 1С (Нейросети)</a>
+        <a href="marketplaces.html">Маркетплейсы</a>
+        <a href="markirovka.html">Маркировка и «Честный Знак»</a>
+        <a href="bitrix24.html">Битрикс24 и CRM</a>
+        <a href="servers.html">Аренда серверов 1С</a>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <a href="#contacts">Оставить заявку</a>
+        <a href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer">Telegram-чат с инженером</a>
+        <a href="tel:+78124071767">+7 (812) 407-17-67</a>
+        <a href="mailto:info@nanosoft-team.ru">info@nanosoft-team.ru</a>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <a href="about.html">Сертификаты и реквизиты</a>
+        <p>ООО «НАНО СОФТ»<br>ИНН 3500005965<br>ОГРН 1243500004000</p>
+      </div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 ООО «НАНО СОФТ»</span><span>Внедрение · Разработка · Сопровождение</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

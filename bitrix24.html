@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Нано Софт — внедрение CRM Битрикс24, аудит отдела продаж, двусторонняя синхронизация с 1С:ERP, КА и УТ 11.5 в реальном времени, сквозная аналитика и B2B-порталы.">
+  <title>Нано Софт — Внедрение CRM Битрикс24 и двусторонняя связка с 1С</title>
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Нано Софт">
+  <meta property="og:title" content="Нано Софт — Внедрение CRM Битрикс24 и бесшовная связка с 1С">
+  <meta property="og:description" content="Автоматизация оптовых и производственных продаж: сквозная синхронизация Битрикс24 и 1С (счета, резервы, оплаты, отгрузки), настройка воронок, телефонии и KPI.">
+  <meta property="og:url" content="https://nanosoft.team/bitrix24.html">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path d="m5 12 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-up" viewBox="0 0 24 24">
+      <path d="M5 19 19 5M7 5h12v12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-tg" viewBox="0 0 24 24">
+      <path d="M21.5 4.5 2.8 11.7c-1.3.5-1.3 1.3-.2 1.6l4.8 1.5 11.1-7c.5-.3 1-.1.6.2L10.9 16.3l-.3 4.6c.5 0 .7-.2 1-.5l2.4-2.3 5 3.7c.9.5 1.6.2 1.8-.8l3.3-15.5c.3-1.3-.5-1.9-1.3-1.5z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-exchange" viewBox="0 0 24 24">
+      <path d="M4 8h16m0 0l-4-4m4 4l-4 4M20 16H4m0 0l4-4m-4 4l4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24">
+      <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Нано Софт — на главную">
+        <span class="brand-icon">
+          <img src="https://nanosoft.team/favicon.ico" alt="" width="30" height="30">
+        </span>
+        <span class="brand-name">НАНО<span>СОФТ</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <button class="nav-hub-btn" type="button" aria-expanded="false" data-mega-target="hub-products">
+          Продукты <svg aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+
+        <button class="nav-hub-btn" type="button" aria-expanded="false" data-mega-target="hub-solutions">
+          Решения <svg aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+
+        <button class="nav-hub-btn" type="button" aria-expanded="false" data-mega-target="hub-company">
+          О компании <svg aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+
+        <a class="nav-direct-link" href="index.html#cases">Кейсы</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-icon-tg" href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer" aria-label="Telegram Нано Софт">
+          <svg aria-hidden="true"><use href="#icon-tg"/></svg>
+        </a>
+        <a class="header-contact" href="tel:+78124071767">+7 (812) 407-17-67</a>
+        <a class="button button-small header-cta" href="#contacts">
+          Обсудить задачу
+          <svg aria-hidden="true"><use href="#icon-arrow"/></svg>
+        </a>
+      </div>
+
+      <details class="mobile-menu">
+        <summary aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </summary>
+        <nav aria-label="Мобильная навигация">
+          <a href="index.html">Главная</a>
+          <a href="vnedrenie-1c.html">Внедрение 1С и переходы</a>
+          <a href="ai.html">Внедрение ИИ в 1С (Нейросети)</a>
+          <a href="index.html#solutions">Внедрение 1С:ERP / КА</a>
+          <a href="marketplaces.html">Маркетплейсы (Ozon, WB, Яндекс, Авито)</a>
+          <a href="markirovka.html">Маркировка и «Честный Знак»</a>
+          <a href="bitrix24.html">Битрикс24 и CRM</a>
+          <a href="servers.html">Аренда серверов 1С</a>
+          <a href="about.html">О компании и сертификаты</a>
+          <a href="index.html#cases">Кейсы</a>
+          <a href="#contacts">Контакты</a>
+          <a href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+          <a href="tel:+78124071767">+7 (812) 407-17-67</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <div class="mega-menu-overlay" aria-hidden="true"></div>
+
+  <!-- Хаб 1: Продукты -->
+  <div class="mega-dropdown-panel" id="hub-products" role="region" aria-label="Продукты 1С и платформы">
+    <div class="floating-menu-grid">
+      <a class="floating-menu-card" href="vnedrenie-1c.html">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Внедрение 1С с нуля и переходы</strong>
+          <span>Запуск новой системы, миграция с УПП / 7.7 и перенос данных</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="ai.html">
+        <div class="floating-card-icon"><svg><use href="#icon-exchange"/></svg></div>
+        <div class="floating-card-body">
+          <strong>ИИ &amp; Нейросети в 1С</strong>
+          <span>LLM-ассистенты, OCR первички и предиктивная аналитика</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#tab-erp">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>1С:ERP &amp; КА 2.5</strong>
+          <span>Комплексный учет, себестоимость и 20/25/26 счета</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="marketplaces.html">
+        <div class="floating-card-icon"><svg><use href="#icon-exchange"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Маркетплейсы (Ozon, WB, Яндекс, Авито)</strong>
+          <span>Остатки без оверсейлов и потоварная юнит-экономика</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#tab-wms">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Склад WMS &amp; ТСД DataMobile</strong>
+          <span>Адресное хранение, зонирование и сборка по штрихкодам</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="bitrix24.html">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Битрикс24 Enterprise</strong>
+          <span>CRM, сквозная телефония и двусторонний обмен с 1С</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="servers.html">
+        <div class="floating-card-icon"><svg><use href="#icon-up"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Серверы 1С (NVMe) и ускорение баз</strong>
+          <span>Tier III ЦОД в РФ по 152-ФЗ, устранение блокировок СУБД</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Хаб 2: Решения -->
+  <div class="mega-dropdown-panel" id="hub-solutions" role="region" aria-label="Отраслевые решения">
+    <div class="floating-menu-grid">
+      <a class="floating-menu-card" href="markirovka.html">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Маркировка «Честный Знак», ТС ПИоТ и ЛМ ЧЗ</strong>
+          <span>True API, СУЗ, разрешительный режим на кассах и агрегация</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="markirovka.html#vetis">
+        <div class="floating-card-icon"><svg><use href="#icon-exchange"/></svg></div>
+        <div class="floating-card-body">
+          <strong>ВетИС «Меркурий», ЕГАИС и МДЛП</strong>
+          <span>Автоматическое гашение и оформление эВСД внутри 1С</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="vnedrenie-1c.html#migration-routes">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Переход с 1С:УПП 1.3 и 7.7 без простоев</strong>
+          <span>Бесшовная миграция справочников, остатков и доработок за выходные</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#connected">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Шина обмена данных &amp; REST API</strong>
+          <span>Микросервисы связки 1С с оборудованием и дилерскими сетями</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Хаб 3: О компании -->
+  <div class="mega-dropdown-panel" id="hub-company" role="region" aria-label="О компании">
+    <div class="floating-menu-grid">
+      <a class="floating-menu-card" href="about.html">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>О компании и сертификаты</strong>
+          <span>Команда, компетенции 1С и подход к проектам</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#why-us">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Почему Нано Софт</strong>
+          <span>Прямой контакт с ведущим архитектором без бюрократии</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#workflow">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Методология по ГОСТ</strong>
+          <span>5 прозрачных этапов от предпроектного аудита до запуска</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#guarantees">
+        <div class="floating-card-icon"><svg><use href="#icon-check"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Гарантии, NDA и SLA</strong>
+          <span>Защита данных по NDA, фиксированные этапы и 12 месяцев гарантии</span>
+        </div>
+      </a>
+      <a class="floating-menu-card" href="index.html#calculator">
+        <div class="floating-card-icon"><svg><use href="#icon-arrow"/></svg></div>
+        <div class="floating-card-body">
+          <strong>Экспресс-калькулятор</strong>
+          <span>Интерактивный расчет сроков и рекомендуемого стека</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- Hero раздел Битрикс24 -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="auto" poster="media/hero-poster.jpg">
+          <source src="media/hero.mp4" type="video/mp4">
+        </video>
+        <div class="server-fallback"><span></span><span></span><span></span><span></span></div>
+      </div>
+      <div class="hero-shade"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> CRM &amp; Управление B2B-продажами</p>
+          <h1 id="hero-title">Внедрение Битрикс24<br>и бесшовная <em>связка с 1С</em></h1>
+          <p class="hero-description">Автоматизируем отделы продаж B2B-компаний, дистрибьюторов и производств: двусторонняя синхронизация сделок, резервов и оплат с 1С в реальном времени, омниканальные воронки, телефония, мессенджеры и прозрачный контроль KPI менеджеров.</p>
+          <div class="hero-actions">
+            <a class="button button-bright" href="#contacts">
+              Заказать аудит отдела продаж
+              <svg aria-hidden="true"><use href="#icon-arrow"/></svg>
+            </a>
+            <a class="text-link text-link-light" href="#solutions">Архитектура интеграции <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="hero-proof">
+          <span>Сертифицированный интегратор Битрикс24 и 1С</span>
+          <span>Двусторонний обмен с 1С:ERP, КА 2.5 и УТ 11.5 в реальном времени</span>
+          <span>Регламенты, обучение и дашборды для РОПа</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Двойная бегущая строка -->
+    <section class="tech-marquee-section" aria-label="Возможности Битрикс24">
+      <div class="tech-grid-overlay" aria-hidden="true"></div>
+      <div class="ticker-dual">
+        <div class="ticker ticker-forward" aria-hidden="true">
+          <div class="ticker-track">
+            <span>Двусторонняя синхронизация с 1С:УТ / КА / ERP<b class="tk-sep">◆</b>Воронки сложных B2B-сделок и тендеров<b class="tk-sep">◆</b>Контроль дебиторской задолженности в CRM<b class="tk-sep">◆</b>IP-телефония, Telegram и WhatsApp<b class="tk-sep">◆</b></span>
+            <span>Двусторонняя синхронизация с 1С:УТ / КА / ERP<b class="tk-sep">◆</b>Воронки сложных B2B-сделок и тендеров<b class="tk-sep">◆</b>Контроль дебиторской задолженности в CRM<b class="tk-sep">◆</b>IP-телефония, Telegram и WhatsApp<b class="tk-sep">◆</b></span>
+          </div>
+        </div>
+        <div class="ticker ticker-backward" aria-hidden="true">
+          <div class="ticker-track">
+            <span>Аудит отдела продаж и регламенты<b class="tk-sep">◆</b>Роботы и триггеры автодействий<b class="tk-sep">◆</b>Сквозная аналитика ROI и маржинальности<b class="tk-sep">◆</b>Автоматическая генерация КП, договоров и счетов<b class="tk-sep">◆</b></span>
+            <span>Аудит отдела продаж и регламенты<b class="tk-sep">◆</b>Роботы и триггеры автодействий<b class="tk-sep">◆</b>Сквозная аналитика ROI и маржинальности<b class="tk-sep">◆</b>Автоматическая генерация КП, договоров и счетов<b class="tk-sep">◆</b></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Направления внедрения Битрикс24 -->
+    <section class="solutions section reveal-block" id="solutions">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 01 / Архитектура CRM и 1С</p>
+            <h2>Продажи без потерь<br>и <span class="muted">работы в двух окнах</span></h2>
+          </div>
+          <p class="section-intro">Создаем архитектуру, в которой менеджеры ведут клиентов в одном окне Битрикс24, а актуальные складские остатки, индивидуальные скидки, статусы оплат и отгрузок мгновенно передаются из 1С.</p>
+        </div>
+
+        <div class="solution-list">
+          <article class="solution-row">
+            <span class="row-number">01</span>
+            <div>
+              <h3>Двусторонняя интеграция Битрикс24 и 1С без дублей</h3>
+              <p>Синхронизация каталога номенклатуры с характеристиками, свободных остатков по складам, карточек контрагентов (с проверкой по ИНН), заказов, счетов, оплат и отгрузочных УПД. Менеджер формирует счет в Битрикс24 — заказ и товарный резерв за секунду встают в 1С; бухгалтер разносит банк в 1С — сделка в CRM автоматически двигается на этап комплектации.</p>
+              <div class="tags"><span>Обмен в реальном времени</span><span>1С:ERP / КА / УТ 11.5</span><span>Товарные резервы</span><span>Счета и статусы УПД</span></div>
+            </div>
+            <a href="#contacts" class="row-link" aria-label="Связка 1С и Битрикс24"><svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+          </article>
+
+          <article class="solution-row">
+            <span class="row-number">02</span>
+            <div>
+              <h3>Аудит и перезапуск B2B-отдела продаж</h3>
+              <p>Проектируем отдельные воронки под лидогенерацию, длинные B2B-сделки, проектные спецификации и регулярные повторные отгрузки постоянным клиентам. Внедряем контроль просроченной дебиторской задолженности, автоматические триггеры касаний и прозрачные BI-дашборды выполнения плана и KPI для руководителя отдела продаж.</p>
+              <div class="tags"><span>Аудит воронок</span><span>Контроль дебиторки</span><span>Соблюдение SLA</span><span>KPI и BI-дашборды</span></div>
+            </div>
+            <a href="#contacts" class="row-link" aria-label="Аудит отдела продаж"><svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+          </article>
+
+          <article class="solution-row">
+            <span class="row-number">03</span>
+            <div>
+              <h3>Омниканальность: телефония, мессенджеры, почта и ИИ-расшифровка</h3>
+              <p>Подключение облачных и офисных АТС, запись и автоматическая ИИ-транскрибация телефонных переговоров с оценкой по чек-листу, интеграция Telegram, WhatsApp, Авито и корпоративной почты. Вся переписка, спецификации и коммерческие предложения надежно сохраняются в карточке клиента при смене менеджера.</p>
+              <div class="tags"><span>IP-телефония</span><span>Telegram &amp; WhatsApp</span><span>ИИ-анализ звонков</span><span>Сохранность клиентской базы</span></div>
+            </div>
+            <a href="#contacts" class="row-link" aria-label="Омниканальность"><svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+          </article>
+
+          <article class="solution-row">
+            <span class="row-number">04</span>
+            <div>
+              <h3>B2B-порталы дилеров и автоматизация согласования договоров</h3>
+              <p>Разрабатываем смарт-процессы визирования договоров, спецификаций и заявок на отсрочку платежа внутри коробочной или облачной версии Битрикс24. Создаем личные кабинеты оптовых покупателей с прямым отображением персональных цен и свободных остатков из 1С.</p>
+              <div class="tags"><span>Коробочный Битрикс24</span><span>Смарт-процессы</span><span>Согласование договоров</span><span>B2B-кабинет дилера</span></div>
+            </div>
+            <a href="#contacts" class="row-link" aria-label="B2B-порталы и смарт-процессы"><svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контактная форма -->
+    <section class="contact-section section reveal-block" id="contacts">
+      <div class="container">
+        <div class="section-heading contact-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 02 / Заявка</p>
+            <h2>Подключить Битрикс24<br>и настроить <span class="muted">связку с 1С</span></h2>
+          </div>
+          <p class="section-intro">Оставьте заявку на аудит процессов продаж, подбор оптимального тарифа (облако или коробка) и расчет интеграции с вашей базой 1С.</p>
+        </div>
+        <div class="contact-layout">
+          <form class="contact-form" id="consultation-form">
+            <div class="form-grid">
+              <label>Ваше имя <input name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required></label>
+              <label>Компания <input name="company" type="text" autocomplete="organization" placeholder="Название компании"></label>
+            </div>
+            <div class="form-grid">
+              <label>Телефон, Telegram или email <input name="contact" type="text" autocomplete="email" placeholder="+7 900 000-00-00 или @username" required></label>
+              <label>Тип задачи
+                <select name="service" required>
+                  <option value="" disabled selected>Выберите задачу</option>
+                  <option>Внедрение Битрикс24 с нуля + связка с 1С</option>
+                  <option>Настройка и исправление обмена действующего Битрикс24 с 1С</option>
+                  <option>Аудит отдела продаж, пересборка воронок и KPI-аналитики</option>
+                  <option>Миграция с облачного Битрикс24 на коробочную версию (On-Premise)</option>
+                  <option>Разработка смарт-процессов и B2B-портала для оптовиков</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="file-upload-label">
+              <div class="file-upload-icon"><svg><use href="#icon-up"/></svg></div>
+              <div class="file-upload-text">
+                <strong>Прикрепить ТЗ или схему текущих воронок</strong>
+                <span>PDF, DOCX, XLSX, ZIP до 25 МБ</span>
+              </div>
+              <input type="file" name="attachment" id="task-file-input">
+            </label>
+            <label>Параметры задачи <textarea name="task" rows="4" placeholder="Сколько сотрудников работает в отделе продаж? Какая конфигурация 1С используется (УТ 11.5, КА 2.5, ERP, УНФ, БП 3.0)?"></textarea></label>
+
+            <label class="consent"><input type="checkbox" required><span>Согласен на обработку персональных данных для ответа на обращение и подготовки коммерческого предложения.</span></label>
+            <div class="form-bottom">
+              <button class="button" type="submit" id="submit-btn">Запросить аудит CRM и расчет интеграции с 1С <svg aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+              <p id="form-message" role="status" class="form-status-msg"></p>
+            </div>
+          </form>
+          <aside class="contact-aside">
+            <p class="aside-label">Быстрая связь с архитектором</p>
+            <a class="contact-large" href="tel:+78124071767">+7 (812) 407-17-67</a>
+            <div class="aside-links">
+              <a class="contact-tg-btn" href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="#icon-tg"/></svg>
+                <span>Написать в Telegram</span>
+              </a>
+              <a class="contact-email" href="mailto:info@nanosoft-team.ru">info@nanosoft-team.ru <svg aria-hidden="true"><use href="#icon-up"/></svg></a>
+            </div>
+            <div class="aside-divider"></div>
+            <p class="aside-label">География и центр разработки</p>
+            <address>Работаем с предприятиями по всей РФ и СНГ.<br>Инженерный центр: г. Вологда, ул. Октябрьская, д. 27</address>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-icon"><img src="https://nanosoft.team/favicon.ico" alt="" width="30" height="30"></span><span class="brand-name">НАНО<span>СОФТ</span></span></a>
+        <p>Комплексная автоматизация производства, складов, маркировки и учета на базе 1С:ERP, 1С:КА и микросервисов.</p>
+      </div>
+      <div>
+        <h3>Навигация</h3>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О компании и сертификаты</a>
+        <a href="vnedrenie-1c.html">Внедрение 1С и переходы</a>
+        <a href="ai.html">Внедрение ИИ в 1С (Нейросети)</a>
+        <a href="marketplaces.html">Маркетплейсы</a>
+        <a href="markirovka.html">Маркировка и «Честный Знак»</a>
+        <a href="bitrix24.html">Битрикс24 и CRM</a>
+        <a href="servers.html">Аренда серверов 1С</a>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <a href="#contacts">Оставить заявку</a>
+        <a href="https://t.me/nanosoft_team" target="_blank" rel="noopener noreferrer">Telegram-чат с инженером</a>
+        <a href="tel:+78124071767">+7 (812) 407-17-67</a>
+        <a href="mailto:info@nanosoft-team.ru">info@nanosoft-team.ru</a>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <p>ООО «НАНО СОФТ»<br>ИНН 3500005965<br>ОГРН 1243500004000</p>
+      </div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 ООО «НАНО СОФТ»</span><span>Внедрение · Разработка · Сопровождение</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
